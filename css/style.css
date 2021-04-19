@@ -71,6 +71,27 @@ p {
 	color: crimson;
 }
 
+#main{
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#main .service-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#main .service-item p {
+	color: white;
+	text-align: left;
+}
+
 /* Header section */
 #header {
 	position: fixed;
