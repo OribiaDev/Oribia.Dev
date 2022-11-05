@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 3.5vw;
+    font-size: 70px;
     filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     white-space: nowrap;
     letter-spacing: .02em;
@@ -189,7 +189,7 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
-    top: 6%;
+    top: 2%;
     margin: auto;
     background: linear-gradient(100deg, #3fb8fb, #fbbc74, #e546fc);
     color: white;
@@ -197,7 +197,7 @@ body::-webkit-scrollbar {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 3.5vw;
+    font-size: 70px;
     filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     white-space: nowrap;
     letter-spacing: .02em;
@@ -300,6 +300,20 @@ body::-webkit-scrollbar {
   .MainBody h2{
     font-size: 22px;
   }
+  .TextBubbleSocials{
+    width: 90%;
+  }
+  .MainBodySocials h1{
+    top: 2%;
+    font-size: 50px;
+  }
+  .topnav a {
+    font-size: 5px;
+  }
+  .MainBodyAbout h1{
+    font-size: 50px;
+    top: 2%;
+  }
 }
 
   /* Media Query For Desktop */
@@ -310,6 +324,21 @@ body::-webkit-scrollbar {
     .MainBody h2{
       font-size: 28px;
     }
+    .TextBubbleSocials{
+      width: 50%;
+    }
+    .MainBodySocials h1{
+      top: 6%;
+      font-size: 70px;
+    }
+    .topnav a {
+      font-size: 25px;
+    }
+    .MainBodyAbout h1{
+      font-size: 70px;
+      top: 10%;
+    }
+    
   }
 
 
@@ -333,12 +362,12 @@ body::-webkit-scrollbar {
   }
 
   .left-col{
-    width: 50%;
+    width: 20vw;
     float: left;
   }
 
   .right-col{
-    width: 50%;
+    width: 20vw;
     float: right;
   }
 
@@ -377,7 +406,7 @@ body::-webkit-scrollbar {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 30px;
     text-decoration: none;
     font-size: 25px;
     border-radius: 8px;
