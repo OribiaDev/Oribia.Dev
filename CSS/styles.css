@@ -1,0 +1,480 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/* Animations */
+@keyframes TitleSwoop {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(0%);}
+  }
+
+  @keyframes SubTitleSwoop {
+    0% {transform: translateX(-200%);}
+    100% {transform: translateX(0%);}
+  }
+
+
+@keyframes SocialSlideIn {
+    0% {bottom:0%;}
+    100% {bottom: 10%; opacity:100%;}
+  }
+
+@keyframes AbtTitleSwoop {
+  0% {transform: translateY(-100%); opacity: 0%;}
+  100% {transform: translateY(0%); opacity: 100%;}
+}
+
+@keyframes AboutSlideIn {
+  0% {transform: translateY(8%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+@keyframes SocialsTitleSwoop {
+  0% {transform: translateY(-100%); opacity: 0%;}
+  100% {transform: translateY(0%); opacity: 100%;}
+}
+
+@keyframes SocialsSlideIn {
+  0% {transform: translateY(8%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+/* Basic Templates */
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+}
+
+/* Index */
+.MainBody {
+    background-color: transparent;
+    width: 100%;
+    height: 92.4vh;
+    margin: auto;
+}
+
+.MainBody h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    top: 5%;
+    margin: auto;
+    background: linear-gradient(250deg, #3fb8fb, #fbbc74, #e546fc);
+    color: white;
+    animation: TitleSwoop 2s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 150px;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    letter-spacing: .02em;
+    transition: 0.3s;
+  }
+
+  .MainBody h2 {
+    font-family: 'Roboto Mono', monospace;
+      position: relative;
+      text-align: center;
+      top: 6%;
+      margin: auto;
+      background: linear-gradient(250deg, #3fb8fb, #fbbc74, #e546fc);
+      color: white;
+      animation: TitleSwoop 2.1s;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 28px;
+      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+      white-space: nowrap;
+      letter-spacing: .02em;
+      transition: 0.3s;
+    }
+
+  /* About Me */
+  .MainBodyAbout {
+    background-color: transparent;
+    width: 100%;
+    height: 92.3vh;
+}
+
+.MainBodyAbout h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    top: 6%;
+    margin: auto;
+    background: linear-gradient(100deg, #3fb8fb, #fbbc74, #e546fc);
+    color: white;
+    animation: AbtTitleSwoop 1.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3.5vw;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    letter-spacing: .02em;
+    transition: 0.3s;
+  }
+
+  .TextBubbleAbt {
+    margin: auto;
+    position: relative;
+    top: 10%;
+    height: auto;
+    max-width: 100%;
+    width: 50%;
+    display:block;
+    padding: 1px;
+    background-color: rgba(20, 20, 20, 0.5);    
+    border-radius: 25px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .TextBubbleTextAbt {
+    font-family: 'Roboto Mono', monospace;
+    text-indent: 30px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+  }
+
+  .TextBubbleTextTitleAbt {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+  }
+
+  .TextBubbleSlide1Abt { 
+    margin: 5%;
+    opacity: 0;
+    animation: AboutSlideIn 0.9s ease-in-out 0.5s forwards;
+  }
+
+  .aboutimg{
+    padding: 30px;
+    width:300px;
+    height:480px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+  }
+  
+  img {
+    max-width:100%;
+    height:auto;
+    max-height:100%;
+    }
+
+  /* Socials */
+  .MainBodySocials {
+    background-color: transparent;
+    width: 100%;
+    height: 92.3vh;
+}
+
+.MainBodySocials h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    top: 6%;
+    margin: auto;
+    background: linear-gradient(100deg, #3fb8fb, #fbbc74, #e546fc);
+    color: white;
+    animation: SocialsTitleSwoop 1.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3.5vw;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    letter-spacing: .02em;
+    transition: 0.3s;
+  }
+
+  .TextBubbleSocials {
+    margin: auto;
+    position: relative;
+    top: 10%;
+    height: auto;
+    max-width: 100%;
+    width: 50%;
+    display:block;
+    padding: 1px;
+    background-color: rgba(20, 20, 20, 0.5);    
+    border-radius: 25px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .TextBubbleTextSocials {
+    font-family: 'Roboto Mono', monospace;
+    text-indent: 30px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+  }
+
+  .TextBubbleTextTitleSocials {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+  }
+
+  .TextBubbleTextSubTitleSocials {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+
+  .TextBubbleSubTextSocials {
+    font-family: 'Roboto Mono', monospace;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+  }
+
+  .TextBubbleSlide1Socials { 
+    margin: 5%;
+    opacity: 0;
+    animation: SocialsSlideIn 0.9s ease-in-out 0.5s forwards;
+  }
+ 
+  .vl {
+    border-left: 2px solid rgb(196, 196, 196);
+    height: 330px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 70px;
+  }
+
+  a{
+    margin-bottom: 25px;
+    display: block;
+  }
+  a:link {
+    color: rgb(206, 226, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }  
+
+  a:hover {
+    color:  rgb(255, 221, 221);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a:visited {
+  color:  rgb(255, 206, 253);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+  /* Normal Stuff */
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 500px) {
+  .MainBody h1{
+    font-size: 100px;
+  }
+  .MainBody h2{
+    font-size: 22px;
+  }
+}
+
+  /* Media Query For Desktop */
+  @media only screen and (min-width: 1200px) {
+    .MainBody h1{
+      font-size: 150px;
+    }
+    .MainBody h2{
+      font-size: 28px;
+    }
+  }
+
+
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../Img/forest.gif); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+
+  .left-col{
+    width: 50%;
+    float: left;
+  }
+
+  .right-col{
+    width: 50%;
+    float: right;
+  }
+
+  /* Navigation Bar*/
+  .topnav {
+    background-color: transparent;
+    overflow: hidden;
+
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 8px;
+    
+    
+  }
+
+  .topnav a:hover {
+    text-decoration: underline;
+    color: rgb(190, 190, 190);
+  }
+  
+  .topnav a.active {
+      background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+
+  
+  .topnav h2 {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 8px;
+  }
+
+
+/* Footer */
+  .footer {
+    height: 65px;
+    align-content: center;
+    text-align: center;
+    padding: 11px;
+
+  }
+
+  .footer p {
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 8px;
+  }
+
+  .footericons {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+
+
+/* Icons  */
+  .bubble {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    animation: SocialSlideIn 1s forwards;
+    opacity:0%;
+    transition: all 0.3s;
+    display: block;
+    margin-bottom: 120px;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
+
+  }
+  .bubble:hover {
+    transform: translate(0, -20%);
+  }
+  
+  #discord {
+    cursor: pointer;
+    bottom: 10%;
+    left: 15%;
+    animation-delay: 1.5s;
+    fill:#5865F2;
+  }
+  #spotify {
+    cursor: pointer;
+    bottom: 10%;
+    left: 30%;
+    animation-delay: 2s;
+    fill: #1DB954;
+  }
+  #github {
+    cursor: pointer;
+    bottom: 10%;
+    left: 45%;
+    animation-delay: 2.5s;
+    fill: #8d8484;
+  }
+  #twitter {
+    cursor: pointer;
+    bottom: 10%;
+    left: 60%;
+    animation-delay: 3s;
+    fill: #1DA1F2;
+  }
+  #youtube {
+    cursor: pointer;
+    bottom: 10%;
+    left: 75%;
+    animation-delay: 3.5s;
+    fill: #ce3838;
+  }
+  .custom-shape-divider-top-1636640641 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: rgb(223, 3, 3);
+  }
+  .shape-fill {
+    fill: rgb(67, 68, 67);
+  }
+
+
+

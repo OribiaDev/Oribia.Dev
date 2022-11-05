@@ -1,210 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<link rel="StyleSheet" href="./CSS/styles.css">
+<link rel="icon" href="./Img/LofiIsland.png" type = "image/x-icon">
+<body style="margin: 0;"></body>
+<title> Spikeyt</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Spikeyt</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MN9ZH2YJ6G"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<!-- Background/Main -->
+<div class='background'>
+    <!-- Navigation Bar -->
+    <div class="topnav">  
+        <h2>Spikeyt</h2>           
+        <a href="about.html">About</a>
+        <a href="socials.html">Socials</a>
+        <a class="active" href="index.html">Home</a>
+    </div> 
 
-    gtag('config', 'G-MN9ZH2YJ6G');
-  </script>
-</head>
-
-<head profile="https://i.imgur.com/mpUIP1U.png">
-  <link rel="shortcut icon" href="./img/BiAvatar.png" type="image/x-icon" />
-</head>
-
-<body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#hero">
-            <h1>Spike<span>yt</span></h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="index" data-after="Home">Home</a></li>
-            <li><a href="DiscordBots" data-after="Bots">Bots</a></li>
-            <li><a href="DiscordServers" data-after="Discord Servers">Discord Servers</a></li>
-            <li><a href="MinecraftMods" data-after="Mods">Mods</a></li>
-            <li><a href="about" data-after="About Me">About Me</a></li>
-          </ul>
-        </div>
-      </div>
+    <!-- Body -->
+    <div class="MainBody">
+        <!-- Main Title -->
+        <h1>Spikeyt</h1>
+        <h2> Offical Website for Nathan Knight</h2>
+            <!-- Icons -->
+            <svg onclick="location.href='https://discord.gg/DbdYVY5ARe'" type="button" class="bubble" id="discord" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0
+            00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>           
+            <svg onclick="location.href='https://open.spotify.com/user/hskntw1k6o10oisu8oedja7v7'" type="button" class="bubble" id="spotify" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Spotify</title><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>           
+            <svg onclick="location.href='https://github.com/TheRealThermionic/'" type="button" class="bubble" id="github" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>            
+            <svg onclick="location.href='https://twitter.com/TheRealNeito__'" type="button" class="bubble" id="twitter" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>           
+            <svg onclick="location.href='https://www.youtube.com/channel/UCiki3uECAfesvCT-Jcd1OEg'" type="button" class="bubble" id="youtube" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
     </div>
-  </section>
-  <!-- End Header -->
-
-
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>Welcome to <span></span></h1>
-        <h1>Spikeyt! <span></span></h1>
-        <a href="about.html" type="button" class="cta">About Me!</a>
-      </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p> Copyright © 2022 Spikeyt. All rights reserved </p>
     </div>
-  </section>
-  <!-- End Hero Section  -->
- 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Info</h1>
-        <p>Below are some of the stuff I specialize in, such as stuff that I code, stuff that I create, and stuff that I love, so please go check some of it out!</p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="./img/TrinityWeaponsLogo.png"/></div>
-          <h2>Minecraft Modding</h2>
-          <p>I create a viority of modifcations for the popular game Minecraft, I code them in the programming language Java, they range from weapon mods to wacky mods such as a mod for soap.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/GateKeeperLogo.png"/></div>
-          <h2>Discord Bot Development</h2>
-          <p>I create a bunch of Discord Bots, such as GateKeeper and Miku, they are made in JavaScript and they consit of an awesome moderation bot, and a multipurpose  confession bot.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/gaybies.jpg"/></div>
-          <h2>Discord Servers</h2>
-          <p>I own and moderate a bunch of Discord Servers, such as some LGBTQ servers called Gaybies, and The Moonlight Bar, they allow fellow LGBTQ+ people to feel free and accepted for who they are.</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="./img/maxresdefault.jpg"/></div>
-          <h2>YouTube</h2>
-          <p>I create a bunch of diffrent youtube channels and videos, such as LonleyVibes, a 24/7 lofi stream, or Thermionic, where I post dev logs and gaming videos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Discord Bots</h1>
-            <h2>GateKeeper</h2>
-            <p>GateKeeper is a discord moderation bot that gives server owners more moderation powers by allowing more indepth verification and punishments.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/GateKeeperLogo.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Minecraft Mods</h1>
-            <h2>TrinityWeapons</h2>
-            <p>TrinityWeapons is a Minecraft Forge mod for 1.13.2-1.16.2, its a mod that adds tons of new and exciting weapons into the game such as the katana or the battle axe, it has over 250 thousand downloads and I hope it gets many many more.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/TrinityWeaponsLogo.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Discord Servers</h1>
-            <h2>Gaybies</h2>
-            <p>Gaybies is a LGBTQ+ Discord server, thats welcoming to everyone no matter of gender, race, or sexual orientaion, we try to make those people who arent accpeted feel accepted and loved for who they are.</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/gaybies.jpg" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Youtube</h1>
-            <h2>Thermionic</h2>
-            <p>Thermionic is my YouTube channel where I post dev logs, gaming videos, and a bunch of diffrent kinds of content, so go check it out!</p>
-          </div>
-          <div class="project-img">
-            <img src="./img/maxresdefault.jpg" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-  
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>Info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/mailbox"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>natelyleknight@gmail.com
-              natelyleknight@spikeyt.com
-            </h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/iphone"/></div>
-          <div class="contact-info">
-            <h1>Social Media</h1>
-            <h2>Snapchat: nater.potater97 <br>
-              Discord: Thermionic#7421 <br>
-              Reddit: u/TheIronSpike <br>
-              Github: nater0097
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
-
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1>Spike<span>YT</span></h1>
-      </div>
-      <h2>The Offical Website for Nathan Knight </h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.instagram.com/depressed.pansexual/"><img src="https://img.icons8.com/instagram"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.reddit.com/user/TheIronSpike"><img src="https://img.icons8.com/reddit"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://github.com/Nater0097"><img src="https://img.icons8.com/github"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.youtube.com/channel/UCiki3uECAfesvCT-Jcd1OEg?view_as=subscriber"><img src="https://img.icons8.com/youtube"/></a>
-        </div>
-      </div>
-      <p>Copyright © 2020-2021 Spikeyt. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./js/app.js"></script>
-</body>
+</div>
 
 </html>
