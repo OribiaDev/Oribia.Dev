@@ -293,7 +293,7 @@ body::-webkit-scrollbar {
   /* Normal Stuff */
 
 /* Media Query For Tablet */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 400px) {
   .MainBody h1{
     font-size: 100px;
   }
@@ -314,10 +314,13 @@ body::-webkit-scrollbar {
     font-size: 50px;
     top: 2%;
   }
+  .background{
+    background-attachment: scroll;
+  }
 }
 
   /* Media Query For Desktop */
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1000px) {
     .MainBody h1{
       font-size: 150px;
     }
@@ -338,8 +341,12 @@ body::-webkit-scrollbar {
       font-size: 70px;
       top: 10%;
     }
+    .background{
+      background-attachment: fixed;
+    }
     
   }
+
 
 
   body {
@@ -354,11 +361,11 @@ body::-webkit-scrollbar {
 
   .background{
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../Img/forest.gif); 
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
+
   }
 
   .left-col{
