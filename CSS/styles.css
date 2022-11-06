@@ -128,10 +128,9 @@ body::-webkit-scrollbar {
   .TextBubbleAbt {
     margin: auto;
     position: relative;
-    top: 10%;
+    top: 6%;
     height: auto;
     max-width: 100%;
-    width: 50%;
     display:block;
     padding: 1px;
     background-color: rgba(20, 20, 20, 0.5);    
@@ -210,10 +209,10 @@ body::-webkit-scrollbar {
     top: 10%;
     height: auto;
     max-width: 100%;
-    width: 50%;
+    width: 80%;
     display:block;
     padding: 1px;
-    background-color: rgba(20, 20, 20, 0.5);    
+    background-color: rgba(20, 20, 20, 0.5);  
     border-radius: 25px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -292,8 +291,8 @@ body::-webkit-scrollbar {
 
   /* Normal Stuff */
 
-/* Media Query For Tablet */
-@media only screen and (min-width: 400px) {
+/* Media Query For Laptops + Phones */
+@media only screen and (min-width: 500px) {
   .MainBody h1{
     font-size: 100px;
   }
@@ -314,13 +313,22 @@ body::-webkit-scrollbar {
     font-size: 50px;
     top: 2%;
   }
+  .abtleft-col{
+    width: 20vw;
+  }
+  .abtright-col{
+    width: 50vw;
+  }
   .background{
     background-attachment: scroll;
+  }
+  .TextBubbleAbt{
+    width: 90%;
   }
 }
 
   /* Media Query For Desktop */
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 1350px) {
     .MainBody h1{
       font-size: 150px;
     }
@@ -344,7 +352,15 @@ body::-webkit-scrollbar {
     .background{
       background-attachment: fixed;
     }
-    
+    .abtleft-col{
+      width: 20vw;
+    }
+    .abtright-col{
+      width: 20vw;
+    }
+    .TextBubbleAbt{
+      width: 50%;
+    }
   }
 
 
@@ -375,6 +391,14 @@ body::-webkit-scrollbar {
 
   .right-col{
     width: 20vw;
+    float: right;
+  }
+
+  .abtleft-col{
+    float: left;
+  }
+
+  .abtright-col{
     float: right;
   }
 
