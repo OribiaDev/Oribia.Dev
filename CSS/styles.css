@@ -292,7 +292,7 @@ body::-webkit-scrollbar {
   /* Normal Stuff */
 
 /* Media Query Phones */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 450px) {
   .MainBody h1{
     font-size: 110px;
   }
@@ -377,7 +377,7 @@ body::-webkit-scrollbar {
 }
 
   /* Media Query For Desktop */
-  @media only screen and (min-width: 1400px) {
+  @media only screen and (min-width: 1000px) {
     .MainBody h1{
       font-size: 150px;
       top: 5%;
@@ -390,7 +390,7 @@ body::-webkit-scrollbar {
       width: 50%;
     }
     .MainBodySocials h1{
-      top: 8%;
+      top: 6%;
       font-size: 70px;
     }
     .topnav a {
@@ -398,7 +398,7 @@ body::-webkit-scrollbar {
     }
     .MainBodyAbout h1{
       font-size: 70px;
-      top: 8%;
+      top: 6%;
     }
     .background{
       background-attachment: fixed;
@@ -407,10 +407,10 @@ body::-webkit-scrollbar {
       width: 20vw;
     }
     .abtright-col{
-      width: 20vw;
+      width: 30vw;
     }
     .TextBubbleAbt{
-      width: 50%;
+      width: 60%;
     }
 
     .bubble{
