@@ -280,6 +280,7 @@ body::-webkit-scrollbar {
     color:  rgb(255, 221, 221);
     background-color: transparent;
     text-decoration: underline;
+    letter-spacing: .02em;
   }
 
   a:visited {
