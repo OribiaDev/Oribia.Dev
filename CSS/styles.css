@@ -607,6 +607,7 @@ body::-webkit-scrollbar {
   .topnav a:hover {
     text-decoration: underline;
     color: rgb(190, 190, 190);
+    letter-spacing: 0em;
   }
   
   .topnav a.active {
