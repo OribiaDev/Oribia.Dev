@@ -232,7 +232,6 @@ body::-webkit-scrollbar {
     text-indent: 30px;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
-    text-align: left;
     color: white;
   }
 
@@ -243,16 +242,16 @@ body::-webkit-scrollbar {
   }
 
   .TextBubbleTextSubTitleSocials {
-    font-family: 'Roboto Mono', monospace;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
     color: white;
   }
 
   .TextBubbleSubTextSocials {
+    text-align: center;
     font-family: 'Roboto Mono', monospace;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
-    text-align: center;
     color: white;
   }
 
@@ -271,13 +270,16 @@ body::-webkit-scrollbar {
 
   .TextBubbleSocials a{
     margin-bottom: 25px;
-    display: block;
+    display: flex;
     transition: all 0.1s ease; 
+    text-align: center;
+    margin: auto;
   }
   .TextBubbleSocials a:link {
     color: rgb(206, 226, 255);
     background-color: transparent;
     text-decoration: none;
+    width: fit-content;
   }  
 
   .TextBubbleSocials a:hover {
@@ -324,12 +326,14 @@ body::-webkit-scrollbar {
   }
   .abtright-col{
     width: 50vw;
+
   }
   .background{
     background-attachment: scroll;
   }
   .TextBubbleAbt{
     width: 90%;
+    height: 670px;
   }
   .bubble{
     margin-bottom: 120px;
@@ -364,7 +368,7 @@ body::-webkit-scrollbar {
     width: 20vw;
   }
   .vl{
-    height: 330px;
+    height: 340px;
   }
   .TextBubbleSlide1Abt{
     margin: 5%;
@@ -417,6 +421,7 @@ body::-webkit-scrollbar {
     }
     .TextBubbleAbt{
       width: 60%;
+      height: 542px;
     }
 
     .bubble{
@@ -452,7 +457,7 @@ body::-webkit-scrollbar {
       width: 20vw;
     }
     .vl{
-      height: 330px;
+      height: 340px;
     }
     .TextBubbleSlide1Abt{
       margin: 5%;
@@ -469,7 +474,6 @@ body::-webkit-scrollbar {
       height:480px;
     }
   }
-
 
     /* Media Query For Laptops */
     @media only screen and (max-height: 850px) {
@@ -503,6 +507,7 @@ body::-webkit-scrollbar {
       }
       .TextBubbleAbt{
         width: 90%;
+        height: 500px;
       }
       .bubble{
         margin-bottom: 45px;
@@ -535,7 +540,7 @@ body::-webkit-scrollbar {
         width: 35vw;
       }
       .vl{
-        height: 300px;
+        height: 310px;
       }
       .TextBubbleSlide1Abt{
         margin: 1%;
