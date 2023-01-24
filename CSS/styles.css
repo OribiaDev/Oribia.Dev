@@ -65,7 +65,7 @@ body::-webkit-scrollbar {
     position: relative;
     text-align: center;
     margin: auto;
-    background: linear-gradient(250deg,  #c3bb9d, #fbbc75, #f494a2);
+    background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2);
     color: white;
     animation: TitleSwoop 2s;
     background-clip: text;
@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
       position: relative;
       text-align: center;
       margin: auto;
-      background: linear-gradient(250deg,  #c3bb9d, #fbbc75, #f494a2);
+      background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2);
       color: white;
       animation: SubTitleSwoop 2.1s;
       background-clip: text;
@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
     position: relative;
     text-align: center;
     margin: auto;
-    background: linear-gradient(250deg,  #f494a2, #fbbc75, #c3bb9d);
+    background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
     color: white;
     animation: AbtTitleSwoop 1.5s;
     background-clip: text;
@@ -195,7 +195,7 @@ body::-webkit-scrollbar {
     text-align: center;
     top: 2%;
     margin: auto;
-    background: linear-gradient(250deg,  #f494a2, #fbbc75, #c3bb9d);
+    background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
     color: white;
     animation: SocialsTitleSwoop 1.5s;
     background-clip: text;
