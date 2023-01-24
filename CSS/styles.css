@@ -474,7 +474,7 @@ body::-webkit-scrollbar {
     /* Media Query For Laptops */
     @media only screen and (max-height: 850px) {
       .MainBody h1{
-        font-size: 125px;
+        font-size: 110px;
         top: 0%;
       }
       .MainBody h2{
