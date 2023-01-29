@@ -1,11 +1,11 @@
 <p align="center">
  <h2 align="center">Spikeyt</h2>
- <p align="center">Spikeyt is a Portfolio/Landing page for myself (Nathan Knight) </p>
+ <p align="center">Spikeyt is a Portfolio/Landing page for myself @Oribia_Dev </p>
 </p>
 
 ## Description
 
-Spikeyt is a landing page for everything that is- well- me- it has my socials, an about me, and different links to my various projects
+Spikeyt is a landing page for everything that is- well- me- it has my socials, and an about me
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ Spikeyt is a landing page for everything that is- well- me- it has my socials, a
 
 ### Executing program
 
-* [https://spikeyt.com](https://spikeyt.com)
+* Double click the html file inside the folder, or go to [https://spikeyt.com](https://spikeyt.com) to see the live version
 
 ## Help
 
@@ -24,7 +24,7 @@ Spikeyt is a landing page for everything that is- well- me- it has my socials, a
 
 ## Authors
 
-* Nathan Knight (Author)
+* [@Oribia_Dev](https://twitter.com/Oribia_Dev)
 
 ## License
 
