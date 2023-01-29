@@ -1,6 +1,6 @@
 <p align="center">
  <h2 align="center">Spikeyt</h2>
- <p align="center">Spikeyt is a Portfolio/Landing page for myself (Olivia Knight) </p>
+ <p align="center">Spikeyt is a Portfolio/Landing page for myself ([@Oribia_Dev](https://twitter.com/Oribia_Dev)) </p>
 </p>
 
 ## Description
