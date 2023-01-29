@@ -24,7 +24,7 @@ Spikeyt is a landing page for everything that is- well- me- it has my socials, a
 
 ## Authors
 
-* Olivia Knight (Author)
+* [@Oribia_Dev](https://twitter.com/Oribia_Dev)
 
 ## License
 
