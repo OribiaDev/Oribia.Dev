@@ -107,6 +107,22 @@ body::-webkit-scrollbar {
     }
 
   /* About Me */
+
+  .TextBubbleTextAbt a:link {
+    color: rgb(206, 226, 255);
+    text-decoration: none;
+  }  
+
+  .TextBubbleTextAbt a:hover {
+    color:  rgb(255, 221, 221);
+    text-decoration: underline;
+
+  }
+
+  .TextBubbleTextAbt a:visited {
+  color:  rgb(255, 206, 253);
+}
+
   .MainBodyAbout {
     background-color: transparent;
     width: 100%;
