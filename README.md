@@ -1,11 +1,11 @@
 <p align="center">
- <h2 align="center">Spikeyt</h2>
- <p align="center">Spikeyt is a Portfolio/Landing page for myself @Oribia_Dev </p>
+ <h2 align="center">Oribia.Dev</h2>
+ <p align="center">Oribia.Dev is a Portfolio/Landing page for myself @Oribia_Dev </p>
 </p>
 
 ## Description
 
-Spikeyt is a landing page for everything that is- well- me- it has my socials, and an about me
+Oribia.Dev is a landing page for everything that is- well- me- it has my socials, and an about me
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ Spikeyt is a landing page for everything that is- well- me- it has my socials, a
 
 ### Executing program
 
-* Double click the html file inside the folder, or go to [https://spikeyt.com](https://spikeyt.com) to see the live version
+* Double click the html file inside the folder, or go to [https://oribia.dev](https://oribia.dev) to see the live version
 
 ## Help
 
