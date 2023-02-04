@@ -64,6 +64,7 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
+    cursor:default;
     margin: auto;
     background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
     color: white;
@@ -90,6 +91,7 @@ body::-webkit-scrollbar {
       position: relative;
       text-align: center;
       margin: auto;
+      cursor:default;
       background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
       color: white;
       animation: SubTitleSwoop 2.1s;
@@ -131,6 +133,7 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
+    cursor:default;
     margin: auto;
     background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
     color: white;
@@ -207,6 +210,7 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
+    cursor:default;
     top: 2%;
     margin: auto;
     background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
