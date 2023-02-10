@@ -5,7 +5,7 @@
 
 /* Animations */
 @keyframes TitleSwoop {
-      0% {transform: translateX(-300%);}
+      0% {transform: translateX(-400%);}
     100% {transform: translateX(0%);}
   } 
 
@@ -19,7 +19,7 @@
     0% {bottom:0%;}
     100% {bottom: 10%; opacity:100%;}
   }
-
+  .HomeNav a
 @keyframes AbtTitleSwoop {
   0% {transform: translateY(-100%); opacity: 0%;}
   100% {transform: translateY(0%); opacity: 100%;}
@@ -64,22 +64,23 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
-    cursor:default;
     margin: auto;
-    background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
+    background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2);
     color: white;
     animation: TitleSwoop 2s;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    font-size: 150px;
     filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     white-space: nowrap;
+    letter-spacing: .02em;
     transition: 0.3s;
     width: fit-content
   }
 
   .MainBody h1:hover {
-    letter-spacing: .08em;
+    letter-spacing: .1em;
   }
 
   .MainBody h2:hover {
@@ -91,8 +92,7 @@ body::-webkit-scrollbar {
       position: relative;
       text-align: center;
       margin: auto;
-      cursor:default;
-      background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
+      background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2);
       color: white;
       animation: SubTitleSwoop 2.1s;
       background-clip: text;
@@ -133,7 +133,6 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
-    cursor:default;
     margin: auto;
     background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
     color: white;
@@ -159,9 +158,9 @@ body::-webkit-scrollbar {
     height: auto;
     max-width: 100%;
     display:block;
-    padding-right: 13px;
+    padding: 1px;
     background-color: rgba(20, 20, 20, 0.5);    
-    border-radius: 30px;
+    border-radius: 25px;
     margin-bottom: 30px;
     overflow: hidden;
   }
@@ -210,7 +209,6 @@ body::-webkit-scrollbar {
   font-family: 'Roboto Mono', monospace;
     position: relative;
     text-align: center;
-    cursor:default;
     top: 2%;
     margin: auto;
     background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
@@ -318,37 +316,26 @@ body::-webkit-scrollbar {
   /* Normal Stuff */
 
 /* Media Query Phones */
-@media only screen and (max-device-width: 450px) {
-  .footer p {
-    font-size: 25px;
-  }
+@media only screen and (min-width: 450px) {
   .MainBody h1{
-    font-size: 120px;
-    top: 200px;
+    font-size: 110px;
   }
   .MainBody h2{
-    font-size: 40px;
-    top: 210px;
+    font-size: 22px;
   }
   .TextBubbleSocials{
-    top: 130px;
     width: 90%;
-    padding-left: 20px;
-    padding-right: 20px;
   }
   .MainBodySocials h1{
-    top: 150px;
-    font-size: 75px;
+    top: 2%;
+    font-size: 50px;
   }
   .NavLinks a {
-    font-size: 43px;
-  }
-  .HomeNav a {
-    font-size: 43px;
+    font-size: 5px;
   }
   .MainBodyAbout h1{
-    font-size: 75px;
-    top: 150px;
+    font-size: 50px;
+    top: 2%;
   }
   .abtleft-col{
     width: 20vw;
@@ -361,14 +348,13 @@ body::-webkit-scrollbar {
     background-attachment: scroll;
   }
   .TextBubbleAbt{
-    margin-top: 21%;
     width: 90%;
     height: auto;
   }
   .bubble{
     margin-bottom: 120px;
-    height: 160px;
-    width: 160px;
+    height: 135px;
+    width: 135px;
   }
 
   .TextBubbleSlide1Socials{
@@ -380,199 +366,51 @@ body::-webkit-scrollbar {
   }
 
   .TextBubbleTextTitleSocials {
-    font-size: 45px;
+    font-size: 32px;
   }
 
   .TextBubbleTextSubTitleSocials {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .TextBubbleSubTextSocials {
-    font-size: 25px;
-  }
-  .left-col{
-    width: 20vw;
-  }
-
-  .right-col{
-    width: 20vw;
-  }
-  .vl{
-    margin-top: 25px;
-    height: 430px;
-  }
-  .TextBubbleSlide1Abt{
-    margin: 5%;
-  }
-  .TextBubbleTextAbt {
-    font-size: 20px;
-  }
-
-  .TextBubbleTextTitleAbt {
-    font-size: 40px;
-  }
-  .aboutimg{
-    width:800px;
-    height:880px;
-  }
-  #discord {
-    left: 23%;
-    margin-bottom: 960px;
-  }
-  #spotify {
-    left: 60%;
-    margin-bottom: 955px;
-  }
-  #github {
-    left: 23%;
-    margin-bottom: 660px;
-  }
-  #twitter {
-    left: 60%;
-    margin-bottom: 660px;
-  }
-  #steam {
-    left: 23%;
-    margin-bottom: 330px;
-  }
-}
-
-/* Media Query Smaller Phones */
-@media only screen and (max-device-height: 720px) {
-  .footer p {
-    font-size: 25px;
-  }
-  .MainBody h1{
-    font-size: 120px;
-    top: 200px;
-  }
-  .MainBody h2{
-    font-size: 40px;
-    top: 210px;
-  }
-  .TextBubbleSocials{
-    top: 130px;
-    width: 90%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .MainBodySocials h1{
-    top: 150px;
-    font-size: 75px;
-  }
-  .NavLinks a {
-    font-size: 43px;
-  }
-  .HomeNav a {
-    font-size: 43px;
-  }
-  .MainBodyAbout h1{
-    font-size: 75px;
-    top: 120px;
-  }
-  .abtleft-col{
-    width: 20vw;
-  }
-  .abtright-col{
-    width: 50vw;
-
-  }
-  .background{
-    background-attachment: scroll;
-  }
-  .TextBubbleAbt{
-    margin-top: 18%;
-    width: 90%;
-    height: auto;
-  }
-  .bubble{
-    margin-bottom: 120px;
-    height: 160px;
-    width: 160px;
-  }
-
-  .TextBubbleSlide1Socials{
-    margin: 6%;
-  }
-
- .TextBubbleTextSocials {
-    font-size: 14px;
-  }
-
-  .TextBubbleTextTitleSocials {
-    font-size: 45px;
-  }
-
-  .TextBubbleTextSubTitleSocials {
-    font-size: 35px;
-  }
-
-  .TextBubbleSubTextSocials {
-    font-size: 25px;
-  }
-  .left-col{
-    width: 20vw;
-  }
-
-  .right-col{
-    width: 20vw;
-  }
-  .vl{
-    margin-top: 25px;
-    height: 430px;
-  }
-  .TextBubbleSlide1Abt{
-    margin: 5%;
-  }
-  .TextBubbleTextAbt {
     font-size: 16px;
   }
+  .left-col{
+    width: 20vw;
+  }
+
+  .right-col{
+    width: 20vw;
+  }
+  .vl{
+    height: 340px;
+  }
+  .TextBubbleSlide1Abt{
+    margin: 5%;
+  }
+  .TextBubbleTextAbt {
+    font-size: 14px;
+  }
 
   .TextBubbleTextTitleAbt {
-    font-size: 35px;
+    font-size: 28px;
   }
   .aboutimg{
     width:300px;
     height:480px;
   }
-  .aboutimg{
-    width:800px;
-    height:880px;
-  }
-  #discord {
-    left: 23%;
-    margin-bottom: 780px;
-  }
-  #spotify {
-    left: 60%;
-    margin-bottom: 775px;
-  }
-  #github {
-    left: 23%;
-    margin-bottom: 480px;
-  }
-  #twitter {
-    left: 60%;
-    margin-bottom: 480px;
-  }
-  #steam {
-    left: 23%;
-    margin-bottom: 180px;
-  }
 }
 
   /* Media Query For Desktop */
-  @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
-    .footer p {
-      font-size: 15px;
-    }
+  @media only screen and (min-width: 1000px) {
     .MainBody h1{
-      font-size: 128px;
-      top: 7%;
+      font-size: 150px;
+      top: 5%;
     }
     .MainBody h2{
-      font-size: 30px;
-      top: 7.2%
+      font-size: 28px;
+      top: 6%
     }
     .TextBubbleSocials{
       width: 50%;
@@ -582,9 +420,6 @@ body::-webkit-scrollbar {
       font-size: 70px;
     }
     .NavLinks a {
-      font-size: 25px;
-    }
-    .HomeNav a {
       font-size: 25px;
     }
     .MainBodyAbout h1{
@@ -638,13 +473,13 @@ body::-webkit-scrollbar {
       width: 20vw;
     }
     .vl{
-      height: 345px;
+      height: 340px;
     }
     .TextBubbleSlide1Abt{
       margin: 5%;
     }
     .TextBubbleTextAbt {
-      font-size: 15px;
+      font-size: 14px;
     }
   
     .TextBubbleTextTitleAbt {
@@ -654,35 +489,12 @@ body::-webkit-scrollbar {
       width:300px;
       height:480px;
     }
-    #discord {
-      left: 15%;
-      margin-bottom: 120px;
-    }
-    #spotify {
-      left: 30%;
-      margin-bottom: 120px;
-    }
-    #github {
-      left: 45%;
-      margin-bottom: 120px;
-    }
-    #twitter {
-      left: 60%;
-      margin-bottom: 120px;
-    }
-    #steam {
-      left: 75%;
-      margin-bottom: 120px;
-    }
   }
 
     /* Media Query For Laptops */
-    @media only screen and (max-height: 850px){
-      .footer p {
-        font-size: 15px;
-      }
+    @media only screen and (max-height: 850px) {
       .MainBody h1{
-        font-size: 100px;
+        font-size: 110px;
         top: 0%;
       }
       .MainBody h2{
@@ -691,17 +503,13 @@ body::-webkit-scrollbar {
       }
       .TextBubbleSocials{
         width: 80%;
-        padding: 10px;
       }
       .MainBodySocials h1{
         top: 2%;
         font-size: 45px;
       }
       .NavLinks a {
-        font-size: 25px;
-      }
-      .HomeNav a {
-        font-size: 25px;
+        font-size: 5px;
       }
       .MainBodyAbout h1{
         font-size: 45px;
@@ -764,139 +572,8 @@ body::-webkit-scrollbar {
         width:150px;
         height:280px;
       }
-      #discord {
-        left: 15%;
-        margin-bottom: 80px;
-      }
-      #spotify {
-        left: 30%;
-        margin-bottom: 80px;
-      }
-      #github {
-        left: 45%;
-        margin-bottom: 80px;
-      }
-      #twitter {
-        left: 60%;
-        margin-bottom: 80px;
-      }
-      #steam {
-        left: 75%;
-        margin-bottom: 80px;
-      }
     }
 
-        /* Media Query For Tablets */
-        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
-          .footer p {
-            font-size: 20px;
-          }
-          .MainBody h1{
-            font-size: 100px;
-            top: 20%;
-          }
-          .MainBody h2{
-            font-size: 22px;
-            top: 20%;
-          }
-          .TextBubbleSocials{
-            width: 70%;
-            padding: 5px;
-            margin-top: 5%;
-          }
-          .MainBodySocials h1{
-            top: 2%;
-            font-size: 45px;
-          }
-          .NavLinks a {
-            font-size: 30px;
-          }
-          .HomeNav a {
-            font-size: 30px;
-          }
-          .MainBodyAbout h1{
-            font-size: 60px;
-            top: 2%;
-          }
-          .abtleft-col{
-            width: 20vw;
-          }
-          .abtright-col{
-            width: 50vw;
-          }
-          .TextBubbleAbt{
-            margin-top: 5%;
-            width: 90%;
-            height: 750px;
-          }
-          .bubble{
-            margin-bottom: 45px;
-            height: 120px;
-            width: 120px;
-          }
-          .TextBubbleSlide1Socials{
-            margin: 2%;
-          }
-          .TextBubbleTextSocials {
-            font-size: 10px;
-          }
-        
-          .TextBubbleTextTitleSocials {
-            font-size: 28px;
-          }
-        
-          .TextBubbleTextSubTitleSocials {
-            font-size: 20px;
-          }
-        
-          .TextBubbleSubTextSocials {
-            font-size: 15px;
-          }
-          .left-col{
-            width: 30vw;
-          }
-          
-          .right-col{
-            width: 30vw;
-          }
-          .vl{
-            height: 310px;
-          }
-          .TextBubbleSlide1Abt{
-            margin: 1%;
-          }
-          .TextBubbleTextAbt {
-            font-size: 17px;
-          }
-        
-          .TextBubbleTextTitleAbt {
-            font-size: 25px;
-          }
-          .aboutimg{
-            width:150px;
-            height:580px;
-          }
-          #discord {
-            left: 15%;
-            margin-bottom: 450px;
-          }
-          #spotify {
-            left: 30%;
-            margin-bottom: 450px;
-          }
-          #github {
-            left: 45%;
-            margin-bottom: 450px;
-          }
-          #twitter {
-            left: 60%;
-            margin-bottom: 450px;
-          }
-          #steam {
-            left: 75%;
-            margin-bottom: 450px;
-          }
-        }
 
 
   body {
@@ -950,6 +627,7 @@ body::-webkit-scrollbar {
     padding: 14px 18px;
     transition: all 0.2s ease; 
     text-decoration: none;
+    font-size: 25px;
     border-radius: 8px;
     
   }
@@ -979,6 +657,7 @@ body::-webkit-scrollbar {
     padding: 21px 30px;
     margin: auto;
     text-decoration: none;
+    font-size: 25px;
     border-radius: 8px;
     letter-spacing: normal;
   }
@@ -998,6 +677,7 @@ body::-webkit-scrollbar {
     text-align: center;
     padding: 0px 50px;
     text-decoration: none;
+    font-size: 15px;
     border-radius: 8px;
   }
 
@@ -1011,43 +691,48 @@ body::-webkit-scrollbar {
 
 
 /* Icons  */
-.bubble {
-  position: absolute;
-  animation: SocialSlideIn 1s forwards;
-  opacity:0%;
-  transition: all 0.3s;
-  display: block;
-  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
+  .bubble {
+    position: absolute;
+    animation: SocialSlideIn 1s forwards;
+    opacity:0%;
+    transition: all 0.3s;
+    display: block;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
 
-}
+  }
   .bubble:hover {
     transform: translate(0, -20%);
   }
   
   #discord {
     cursor: pointer;
+    left: 15%;
     animation-delay: 1.5s;
     fill:#5865F2;
   }
   #spotify {
     cursor: pointer;
+    left: 30%;
     animation-delay: 2s;
     fill: #1DB954;
   }
   #github {
     cursor: pointer;
+    left: 45%;
     animation-delay: 2.5s;
-    fill: #a39a9a;
+    fill: #8d8484;
   }
   #twitter {
     cursor: pointer;
+    left: 60%;
     animation-delay: 3s;
     fill: #1DA1F2;
   }
-  #steam {
+  #youtube {
     cursor: pointer;
+    left: 75%;
     animation-delay: 3.5s;
-    fill: #262726;
+    fill: #ce3838;
   }
   .custom-shape-divider-top-1636640641 {
     position: absolute;
