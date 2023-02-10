@@ -324,11 +324,11 @@ body::-webkit-scrollbar {
   }
   .MainBody h1{
     font-size: 120px;
-    top: 210px;
+    top: 200px;
   }
   .MainBody h2{
     font-size: 40px;
-    top: 220px;
+    top: 210px;
   }
   .TextBubbleSocials{
     top: 130px;
@@ -417,23 +417,23 @@ body::-webkit-scrollbar {
   }
   #discord {
     left: 23%;
-    margin-bottom: 980px;
+    margin-bottom: 960px;
   }
   #spotify {
     left: 60%;
-    margin-bottom: 975px;
+    margin-bottom: 955px;
   }
   #github {
     left: 23%;
-    margin-bottom: 680px;
+    margin-bottom: 660px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 680px;
+    margin-bottom: 660px;
   }
   #steam {
     left: 23%;
-    margin-bottom: 350px;
+    margin-bottom: 330px;
   }
 }
 
@@ -444,11 +444,11 @@ body::-webkit-scrollbar {
   }
   .MainBody h1{
     font-size: 120px;
-    top: 210px;
+    top: 200px;
   }
   .MainBody h2{
     font-size: 40px;
-    top: 220px;
+    top: 210px;
   }
   .TextBubbleSocials{
     top: 130px;
@@ -541,23 +541,23 @@ body::-webkit-scrollbar {
   }
   #discord {
     left: 23%;
-    margin-bottom: 800px;
+    margin-bottom: 780px;
   }
   #spotify {
     left: 60%;
-    margin-bottom: 800px;
+    margin-bottom: 775px;
   }
   #github {
     left: 23%;
-    margin-bottom: 500px;
+    margin-bottom: 480px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 500px;
+    margin-bottom: 480px;
   }
   #steam {
     left: 23%;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
   }
 }
 
