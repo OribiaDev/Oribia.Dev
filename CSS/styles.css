@@ -159,9 +159,9 @@ body::-webkit-scrollbar {
     height: auto;
     max-width: 100%;
     display:block;
-    padding: 1px;
+    padding-right: 13px;
     background-color: rgba(20, 20, 20, 0.5);    
-    border-radius: 25px;
+    border-radius: 30px;
     margin-bottom: 30px;
     overflow: hidden;
   }
@@ -318,31 +318,37 @@ body::-webkit-scrollbar {
   /* Normal Stuff */
 
 /* Media Query Phones */
-@media only screen and (min-width: 450px) {
+@media only screen and (max-device-width: 450px) {
+  .footer p {
+    font-size: 25px;
+  }
   .MainBody h1{
     font-size: 120px;
-    top: 3%;
+    top: 210px;
   }
   .MainBody h2{
-    font-size: 35px;
-    top: 3.2%;
+    font-size: 40px;
+    top: 220px;
   }
   .TextBubbleSocials{
+    top: 130px;
     width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .MainBodySocials h1{
-    top: 2%;
-    font-size: 50px;
+    top: 150px;
+    font-size: 75px;
   }
   .NavLinks a {
-    font-size: 35px;
+    font-size: 43px;
   }
   .HomeNav a {
-    font-size: 35px;
+    font-size: 43px;
   }
   .MainBodyAbout h1{
-    font-size: 50px;
-    top: 2%;
+    font-size: 75px;
+    top: 150px;
   }
   .abtleft-col{
     width: 20vw;
@@ -355,13 +361,14 @@ body::-webkit-scrollbar {
     background-attachment: scroll;
   }
   .TextBubbleAbt{
+    margin-top: 21%;
     width: 90%;
     height: auto;
   }
   .bubble{
     margin-bottom: 120px;
-    height: 155px;
-    width: 155px;
+    height: 160px;
+    width: 160px;
   }
 
   .TextBubbleSlide1Socials{
@@ -373,15 +380,15 @@ body::-webkit-scrollbar {
   }
 
   .TextBubbleTextTitleSocials {
-    font-size: 32px;
+    font-size: 45px;
   }
 
   .TextBubbleTextSubTitleSocials {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .TextBubbleSubTextSocials {
-    font-size: 16px;
+    font-size: 25px;
   }
   .left-col{
     width: 20vw;
@@ -391,26 +398,174 @@ body::-webkit-scrollbar {
     width: 20vw;
   }
   .vl{
-    height: 340px;
+    margin-top: 25px;
+    height: 430px;
   }
   .TextBubbleSlide1Abt{
     margin: 5%;
   }
   .TextBubbleTextAbt {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .TextBubbleTextTitleAbt {
-    font-size: 28px;
+    font-size: 40px;
+  }
+  .aboutimg{
+    width:800px;
+    height:880px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 980px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 975px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 680px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 680px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 350px;
+  }
+}
+
+/* Media Query Smaller Phones */
+@media only screen and (max-device-height: 720px) {
+  .footer p {
+    font-size: 25px;
+  }
+  .MainBody h1{
+    font-size: 120px;
+    top: 210px;
+  }
+  .MainBody h2{
+    font-size: 40px;
+    top: 220px;
+  }
+  .TextBubbleSocials{
+    top: 130px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .MainBodySocials h1{
+    top: 150px;
+    font-size: 75px;
+  }
+  .NavLinks a {
+    font-size: 43px;
+  }
+  .HomeNav a {
+    font-size: 43px;
+  }
+  .MainBodyAbout h1{
+    font-size: 75px;
+    top: 120px;
+  }
+  .abtleft-col{
+    width: 20vw;
+  }
+  .abtright-col{
+    width: 50vw;
+
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .TextBubbleAbt{
+    margin-top: 18%;
+    width: 90%;
+    height: auto;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 160px;
+    width: 160px;
+  }
+
+  .TextBubbleSlide1Socials{
+    margin: 6%;
+  }
+
+ .TextBubbleTextSocials {
+    font-size: 14px;
+  }
+
+  .TextBubbleTextTitleSocials {
+    font-size: 45px;
+  }
+
+  .TextBubbleTextSubTitleSocials {
+    font-size: 35px;
+  }
+
+  .TextBubbleSubTextSocials {
+    font-size: 25px;
+  }
+  .left-col{
+    width: 20vw;
+  }
+
+  .right-col{
+    width: 20vw;
+  }
+  .vl{
+    margin-top: 25px;
+    height: 430px;
+  }
+  .TextBubbleSlide1Abt{
+    margin: 5%;
+  }
+  .TextBubbleTextAbt {
+    font-size: 16px;
+  }
+
+  .TextBubbleTextTitleAbt {
+    font-size: 35px;
   }
   .aboutimg{
     width:300px;
     height:480px;
   }
+  .aboutimg{
+    width:800px;
+    height:880px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 800px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 800px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 500px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 500px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 200px;
+  }
 }
 
   /* Media Query For Desktop */
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
+    .footer p {
+      font-size: 15px;
+    }
     .MainBody h1{
       font-size: 128px;
       top: 7%;
@@ -483,13 +638,13 @@ body::-webkit-scrollbar {
       width: 20vw;
     }
     .vl{
-      height: 340px;
+      height: 345px;
     }
     .TextBubbleSlide1Abt{
       margin: 5%;
     }
     .TextBubbleTextAbt {
-      font-size: 14px;
+      font-size: 15px;
     }
   
     .TextBubbleTextTitleAbt {
@@ -499,10 +654,33 @@ body::-webkit-scrollbar {
       width:300px;
       height:480px;
     }
+    #discord {
+      left: 15%;
+      margin-bottom: 120px;
+    }
+    #spotify {
+      left: 30%;
+      margin-bottom: 120px;
+    }
+    #github {
+      left: 45%;
+      margin-bottom: 120px;
+    }
+    #twitter {
+      left: 60%;
+      margin-bottom: 120px;
+    }
+    #steam {
+      left: 75%;
+      margin-bottom: 120px;
+    }
   }
 
     /* Media Query For Laptops */
-    @media only screen and (max-height: 850px) {
+    @media only screen and (max-height: 850px){
+      .footer p {
+        font-size: 15px;
+      }
       .MainBody h1{
         font-size: 100px;
         top: 0%;
@@ -513,6 +691,7 @@ body::-webkit-scrollbar {
       }
       .TextBubbleSocials{
         width: 80%;
+        padding: 10px;
       }
       .MainBodySocials h1{
         top: 2%;
@@ -585,8 +764,139 @@ body::-webkit-scrollbar {
         width:150px;
         height:280px;
       }
+      #discord {
+        left: 15%;
+        margin-bottom: 80px;
+      }
+      #spotify {
+        left: 30%;
+        margin-bottom: 80px;
+      }
+      #github {
+        left: 45%;
+        margin-bottom: 80px;
+      }
+      #twitter {
+        left: 60%;
+        margin-bottom: 80px;
+      }
+      #steam {
+        left: 75%;
+        margin-bottom: 80px;
+      }
     }
 
+        /* Media Query For Tablets */
+        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
+          .footer p {
+            font-size: 20px;
+          }
+          .MainBody h1{
+            font-size: 100px;
+            top: 20%;
+          }
+          .MainBody h2{
+            font-size: 22px;
+            top: 20%;
+          }
+          .TextBubbleSocials{
+            width: 70%;
+            padding: 5px;
+            margin-top: 5%;
+          }
+          .MainBodySocials h1{
+            top: 2%;
+            font-size: 45px;
+          }
+          .NavLinks a {
+            font-size: 30px;
+          }
+          .HomeNav a {
+            font-size: 30px;
+          }
+          .MainBodyAbout h1{
+            font-size: 60px;
+            top: 2%;
+          }
+          .abtleft-col{
+            width: 20vw;
+          }
+          .abtright-col{
+            width: 50vw;
+          }
+          .TextBubbleAbt{
+            margin-top: 5%;
+            width: 90%;
+            height: 750px;
+          }
+          .bubble{
+            margin-bottom: 45px;
+            height: 120px;
+            width: 120px;
+          }
+          .TextBubbleSlide1Socials{
+            margin: 2%;
+          }
+          .TextBubbleTextSocials {
+            font-size: 10px;
+          }
+        
+          .TextBubbleTextTitleSocials {
+            font-size: 28px;
+          }
+        
+          .TextBubbleTextSubTitleSocials {
+            font-size: 20px;
+          }
+        
+          .TextBubbleSubTextSocials {
+            font-size: 15px;
+          }
+          .left-col{
+            width: 30vw;
+          }
+          
+          .right-col{
+            width: 30vw;
+          }
+          .vl{
+            height: 310px;
+          }
+          .TextBubbleSlide1Abt{
+            margin: 1%;
+          }
+          .TextBubbleTextAbt {
+            font-size: 17px;
+          }
+        
+          .TextBubbleTextTitleAbt {
+            font-size: 25px;
+          }
+          .aboutimg{
+            width:150px;
+            height:580px;
+          }
+          #discord {
+            left: 15%;
+            margin-bottom: 450px;
+          }
+          #spotify {
+            left: 30%;
+            margin-bottom: 450px;
+          }
+          #github {
+            left: 45%;
+            margin-bottom: 450px;
+          }
+          #twitter {
+            left: 60%;
+            margin-bottom: 450px;
+          }
+          #steam {
+            left: 75%;
+            margin-bottom: 450px;
+          }
+        }
 
 
   body {
@@ -688,7 +998,6 @@ body::-webkit-scrollbar {
     text-align: center;
     padding: 0px 50px;
     text-decoration: none;
-    font-size: 15px;
     border-radius: 8px;
   }
 
@@ -702,46 +1011,41 @@ body::-webkit-scrollbar {
 
 
 /* Icons  */
-  .bubble {
-    position: absolute;
-    animation: SocialSlideIn 1s forwards;
-    opacity:0%;
-    transition: all 0.3s;
-    display: block;
-    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
+.bubble {
+  position: absolute;
+  animation: SocialSlideIn 1s forwards;
+  opacity:0%;
+  transition: all 0.3s;
+  display: block;
+  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
 
-  }
+}
   .bubble:hover {
     transform: translate(0, -20%);
   }
   
   #discord {
     cursor: pointer;
-    left: 15%;
     animation-delay: 1.5s;
     fill:#5865F2;
   }
   #spotify {
     cursor: pointer;
-    left: 30%;
     animation-delay: 2s;
     fill: #1DB954;
   }
   #github {
     cursor: pointer;
-    left: 45%;
     animation-delay: 2.5s;
     fill: #a39a9a;
   }
   #twitter {
     cursor: pointer;
-    left: 60%;
     animation-delay: 3s;
     fill: #1DA1F2;
   }
   #steam {
     cursor: pointer;
-    left: 75%;
     animation-delay: 3.5s;
     fill: #262726;
   }
