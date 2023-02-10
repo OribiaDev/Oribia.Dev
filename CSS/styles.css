@@ -1,0 +1,1066 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/* Animations */
+@keyframes TitleSwoop {
+      0% {transform: translateX(-300%);}
+    100% {transform: translateX(0%);}
+  } 
+
+  @keyframes SubTitleSwoop {
+    0% {transform: translateX(-450%);}
+    100% {transform: translateX(0%);}
+  }
+
+
+@keyframes SocialSlideIn {
+    0% {bottom:0%;}
+    100% {bottom: 10%; opacity:100%;}
+  }
+
+@keyframes AbtTitleSwoop {
+  0% {transform: translateY(-100%); opacity: 0%;}
+  100% {transform: translateY(0%); opacity: 100%;}
+}
+
+@keyframes AboutSlideIn {
+  0% {transform: translateY(8%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+@keyframes SocialsTitleSwoop {
+  0% {transform: translateY(-100%); opacity: 0%;}
+  100% {transform: translateY(0%); opacity: 100%;}
+}
+
+@keyframes SocialsSlideIn {
+  0% {transform: translateY(8%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+/* Basic Templates */
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+}
+
+/* Index */
+.MainBody {
+    background-color: transparent;
+    width: 100%;
+    height: 92.4vh;
+}
+
+.MainBody h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    cursor:default;
+    margin: auto;
+    background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
+    color: white;
+    animation: TitleSwoop 2s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content
+  }
+
+  .MainBody h1:hover {
+    letter-spacing: .08em;
+  }
+
+  .MainBody h2:hover {
+    letter-spacing: .1em;
+  }
+
+  .MainBody h2 {
+    font-family: 'Roboto Mono', monospace;
+      position: relative;
+      text-align: center;
+      margin: auto;
+      cursor:default;
+      background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
+      color: white;
+      animation: SubTitleSwoop 2.1s;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 28px;
+      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+      white-space: nowrap;
+      letter-spacing: .02em;
+      transition: 0.3s;
+      width: fit-content;
+    }
+
+  /* About Me */
+
+  .TextBubbleTextAbt a:link {
+    color: rgb(206, 226, 255);
+    text-decoration: none;
+  }  
+
+  .TextBubbleTextAbt a:hover {
+    color:  rgb(255, 221, 221);
+    text-decoration: underline;
+
+  }
+
+  .TextBubbleTextAbt a:visited {
+  color:  rgb(255, 206, 253);
+}
+
+  .MainBodyAbout {
+    background-color: transparent;
+    width: 100%;
+    height: 92.3vh;
+}
+
+.MainBodyAbout h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    cursor:default;
+    margin: auto;
+    background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
+    color: white;
+    animation: AbtTitleSwoop 1.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    letter-spacing: .02em;
+    transition: 0.3s;
+    width: fit-content;
+  }
+
+  .MainBodyAbout h1:hover {
+    letter-spacing: .1em;
+  }
+
+  .TextBubbleAbt {
+    margin: auto;
+    position: relative;
+    top: 6%;
+    height: auto;
+    max-width: 100%;
+    display:block;
+    padding-right: 13px;
+    background-color: rgba(20, 20, 20, 0.5);    
+    border-radius: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .TextBubbleTextAbt {
+    font-family: 'Roboto Mono', monospace;
+    text-indent: 30px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    text-align: left;
+    color: white;
+  }
+
+  .TextBubbleTextTitleAbt {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: white;
+  }
+
+  .TextBubbleSlide1Abt { 
+    opacity: 0;
+    animation: AboutSlideIn 0.9s ease-in-out 0.5s forwards;
+  }
+
+  .aboutimg{
+    padding: 30px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+  }
+  
+  img {
+    max-width:100%;
+    max-height:100%;
+    height: auto
+    }
+
+  /* Socials */
+  .MainBodySocials {
+    background-color: transparent;
+    width: 100%;
+    height: 92.3vh;
+}
+
+.MainBodySocials h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    cursor:default;
+    top: 2%;
+    margin: auto;
+    background: linear-gradient(250deg,  #f494a2, #fbbc75, #bfbba0);
+    color: white;
+    animation: SocialsTitleSwoop 1.5s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    letter-spacing: .02em;
+    transition: 0.3s;
+    width: fit-content;
+  }
+
+  .MainBodySocials h1:hover {
+    letter-spacing: .1em;
+  }
+
+  .TextBubbleSocials {
+    margin: auto;
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    width: 80%;
+    display: block;
+    padding: 1px;
+    background-color: rgba(20, 20, 20, 0.5);  
+    border-radius: 25px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .TextBubbleTextSocials {
+    font-family: 'Roboto Mono', monospace;
+    text-indent: 30px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    color: white;
+  }
+
+  .TextBubbleTextTitleSocials {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    color: white;
+  }
+
+  .TextBubbleTextSubTitleSocials {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+  }
+
+  .TextBubbleSubTextSocials {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    color: white;
+  }
+
+  .TextBubbleSlide1Socials { 
+    opacity: 0;
+    animation: SocialsSlideIn 0.9s ease-in-out 0.5s forwards;
+  }
+ 
+  .vl {
+    border-left: 2px solid rgb(196, 196, 196);
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 70px;
+  }
+
+  .TextBubbleSocials a{
+    margin-bottom: 25px;
+    display: flex;
+    transition: all 0.1s ease; 
+    text-align: center;
+    margin: auto;
+  }
+  .TextBubbleSocials a:link {
+    color: rgb(206, 226, 255);
+    background-color: transparent;
+    text-decoration: none;
+    width: fit-content;
+  }  
+
+  .TextBubbleSocials a:hover {
+    color:  rgb(255, 221, 221);
+    background-color: transparent;
+    text-decoration: underline;
+    letter-spacing: .025em;
+
+  }
+
+  .TextBubbleSocials a:visited {
+  color:  rgb(255, 206, 253);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+  /* Normal Stuff */
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 450px) {
+  .footer p {
+    font-size: 25px;
+  }
+  .MainBody h1{
+    font-size: 120px;
+    top: 200px;
+  }
+  .MainBody h2{
+    font-size: 40px;
+    top: 210px;
+  }
+  .TextBubbleSocials{
+    top: 130px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .MainBodySocials h1{
+    top: 150px;
+    font-size: 75px;
+  }
+  .NavLinks a {
+    font-size: 43px;
+  }
+  .HomeNav a {
+    font-size: 43px;
+  }
+  .MainBodyAbout h1{
+    font-size: 75px;
+    top: 150px;
+  }
+  .abtleft-col{
+    width: 20vw;
+  }
+  .abtright-col{
+    width: 50vw;
+
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .TextBubbleAbt{
+    margin-top: 21%;
+    width: 90%;
+    height: auto;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 160px;
+    width: 160px;
+  }
+
+  .TextBubbleSlide1Socials{
+    margin: 6%;
+  }
+
+ .TextBubbleTextSocials {
+    font-size: 14px;
+  }
+
+  .TextBubbleTextTitleSocials {
+    font-size: 45px;
+  }
+
+  .TextBubbleTextSubTitleSocials {
+    font-size: 35px;
+  }
+
+  .TextBubbleSubTextSocials {
+    font-size: 25px;
+  }
+  .left-col{
+    width: 20vw;
+  }
+
+  .right-col{
+    width: 20vw;
+  }
+  .vl{
+    margin-top: 25px;
+    height: 430px;
+  }
+  .TextBubbleSlide1Abt{
+    margin: 5%;
+  }
+  .TextBubbleTextAbt {
+    font-size: 20px;
+  }
+
+  .TextBubbleTextTitleAbt {
+    font-size: 40px;
+  }
+  .aboutimg{
+    width:800px;
+    height:880px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 960px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 955px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 660px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 660px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 330px;
+  }
+}
+
+/* Media Query Smaller Phones */
+@media only screen and (max-device-height: 720px) {
+  .footer p {
+    font-size: 25px;
+  }
+  .MainBody h1{
+    font-size: 120px;
+    top: 200px;
+  }
+  .MainBody h2{
+    font-size: 40px;
+    top: 210px;
+  }
+  .TextBubbleSocials{
+    top: 130px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .MainBodySocials h1{
+    top: 150px;
+    font-size: 75px;
+  }
+  .NavLinks a {
+    font-size: 43px;
+  }
+  .HomeNav a {
+    font-size: 43px;
+  }
+  .MainBodyAbout h1{
+    font-size: 75px;
+    top: 120px;
+  }
+  .abtleft-col{
+    width: 20vw;
+  }
+  .abtright-col{
+    width: 50vw;
+
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .TextBubbleAbt{
+    margin-top: 18%;
+    width: 90%;
+    height: auto;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 160px;
+    width: 160px;
+  }
+
+  .TextBubbleSlide1Socials{
+    margin: 6%;
+  }
+
+ .TextBubbleTextSocials {
+    font-size: 14px;
+  }
+
+  .TextBubbleTextTitleSocials {
+    font-size: 45px;
+  }
+
+  .TextBubbleTextSubTitleSocials {
+    font-size: 35px;
+  }
+
+  .TextBubbleSubTextSocials {
+    font-size: 25px;
+  }
+  .left-col{
+    width: 20vw;
+  }
+
+  .right-col{
+    width: 20vw;
+  }
+  .vl{
+    margin-top: 25px;
+    height: 430px;
+  }
+  .TextBubbleSlide1Abt{
+    margin: 5%;
+  }
+  .TextBubbleTextAbt {
+    font-size: 16px;
+  }
+
+  .TextBubbleTextTitleAbt {
+    font-size: 35px;
+  }
+  .aboutimg{
+    width:300px;
+    height:480px;
+  }
+  .aboutimg{
+    width:800px;
+    height:880px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 780px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 775px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 480px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 480px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 180px;
+  }
+}
+
+  /* Media Query For Desktop */
+  @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
+    .footer p {
+      font-size: 15px;
+    }
+    .MainBody h1{
+      font-size: 128px;
+      top: 7%;
+    }
+    .MainBody h2{
+      font-size: 30px;
+      top: 7.2%
+    }
+    .TextBubbleSocials{
+      width: 50%;
+    }
+    .MainBodySocials h1{
+      top: 6%;
+      font-size: 70px;
+    }
+    .NavLinks a {
+      font-size: 25px;
+    }
+    .HomeNav a {
+      font-size: 25px;
+    }
+    .MainBodyAbout h1{
+      font-size: 70px;
+      top: 6%;
+    }
+    .background{
+      background-attachment: fixed;
+    }
+    .abtleft-col{
+      width: 20vw;
+    }
+    .abtright-col{
+      width: 30vw;
+    }
+    .TextBubbleAbt{
+      width: 60%;
+      height: 542px;
+    }
+
+    .bubble{
+      margin-bottom: 120px;
+      height: 150px;
+      width: 150px;
+    }
+
+    .TextBubbleSlide1Socials{
+      margin: 6%;
+    }
+
+   .TextBubbleTextSocials {
+      font-size: 14px;
+    }
+
+    .TextBubbleTextTitleSocials {
+      font-size: 32px;
+    }
+
+    .TextBubbleTextSubTitleSocials {
+      font-size: 25px;
+    }
+
+    .TextBubbleSubTextSocials {
+      font-size: 16px;
+    }
+    .left-col{
+      width: 20vw;
+    }
+  
+    .right-col{
+      width: 20vw;
+    }
+    .vl{
+      height: 345px;
+    }
+    .TextBubbleSlide1Abt{
+      margin: 5%;
+    }
+    .TextBubbleTextAbt {
+      font-size: 15px;
+    }
+  
+    .TextBubbleTextTitleAbt {
+      font-size: 28px;
+    }
+    .aboutimg{
+      width:300px;
+      height:480px;
+    }
+    #discord {
+      left: 15%;
+      margin-bottom: 120px;
+    }
+    #spotify {
+      left: 30%;
+      margin-bottom: 120px;
+    }
+    #github {
+      left: 45%;
+      margin-bottom: 120px;
+    }
+    #twitter {
+      left: 60%;
+      margin-bottom: 120px;
+    }
+    #steam {
+      left: 75%;
+      margin-bottom: 120px;
+    }
+  }
+
+    /* Media Query For Laptops */
+    @media only screen and (max-height: 850px){
+      .footer p {
+        font-size: 15px;
+      }
+      .MainBody h1{
+        font-size: 100px;
+        top: 0%;
+      }
+      .MainBody h2{
+        font-size: 22px;
+        top: 0%;
+      }
+      .TextBubbleSocials{
+        width: 80%;
+        padding: 10px;
+      }
+      .MainBodySocials h1{
+        top: 2%;
+        font-size: 45px;
+      }
+      .NavLinks a {
+        font-size: 25px;
+      }
+      .HomeNav a {
+        font-size: 25px;
+      }
+      .MainBodyAbout h1{
+        font-size: 45px;
+        top: 2%;
+      }
+      .abtleft-col{
+        width: 20vw;
+      }
+      .abtright-col{
+        width: 50vw;
+      }
+      .TextBubbleAbt{
+        width: 90%;
+        height: 500px;
+      }
+      .bubble{
+        margin-bottom: 45px;
+        height: 120px;
+        width: 120px;
+      }
+      .TextBubbleSlide1Socials{
+        margin: 2%;
+      }
+      .TextBubbleTextSocials {
+        font-size: 10px;
+      }
+    
+      .TextBubbleTextTitleSocials {
+        font-size: 28px;
+      }
+    
+      .TextBubbleTextSubTitleSocials {
+        font-size: 20px;
+      }
+    
+      .TextBubbleSubTextSocials {
+        font-size: 15px;
+      }
+      .left-col{
+        width: 35vw;
+      }
+      
+      .right-col{
+        width: 35vw;
+      }
+      .vl{
+        height: 310px;
+      }
+      .TextBubbleSlide1Abt{
+        margin: 1%;
+      }
+      .TextBubbleTextAbt {
+        font-size: 14px;
+      }
+    
+      .TextBubbleTextTitleAbt {
+        font-size: 20px;
+      }
+      .aboutimg{
+        width:150px;
+        height:280px;
+      }
+      #discord {
+        left: 15%;
+        margin-bottom: 80px;
+      }
+      #spotify {
+        left: 30%;
+        margin-bottom: 80px;
+      }
+      #github {
+        left: 45%;
+        margin-bottom: 80px;
+      }
+      #twitter {
+        left: 60%;
+        margin-bottom: 80px;
+      }
+      #steam {
+        left: 75%;
+        margin-bottom: 80px;
+      }
+    }
+
+        /* Media Query For Tablets */
+        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
+          .footer p {
+            font-size: 20px;
+          }
+          .MainBody h1{
+            font-size: 100px;
+            top: 20%;
+          }
+          .MainBody h2{
+            font-size: 22px;
+            top: 20%;
+          }
+          .TextBubbleSocials{
+            width: 70%;
+            padding: 5px;
+            margin-top: 5%;
+          }
+          .MainBodySocials h1{
+            top: 2%;
+            font-size: 45px;
+          }
+          .NavLinks a {
+            font-size: 30px;
+          }
+          .HomeNav a {
+            font-size: 30px;
+          }
+          .MainBodyAbout h1{
+            font-size: 60px;
+            top: 2%;
+          }
+          .abtleft-col{
+            width: 20vw;
+          }
+          .abtright-col{
+            width: 50vw;
+          }
+          .TextBubbleAbt{
+            margin-top: 5%;
+            width: 90%;
+            height: 750px;
+          }
+          .bubble{
+            margin-bottom: 45px;
+            height: 120px;
+            width: 120px;
+          }
+          .TextBubbleSlide1Socials{
+            margin: 2%;
+          }
+          .TextBubbleTextSocials {
+            font-size: 10px;
+          }
+        
+          .TextBubbleTextTitleSocials {
+            font-size: 28px;
+          }
+        
+          .TextBubbleTextSubTitleSocials {
+            font-size: 20px;
+          }
+        
+          .TextBubbleSubTextSocials {
+            font-size: 15px;
+          }
+          .left-col{
+            width: 30vw;
+          }
+          
+          .right-col{
+            width: 30vw;
+          }
+          .vl{
+            height: 310px;
+          }
+          .TextBubbleSlide1Abt{
+            margin: 1%;
+          }
+          .TextBubbleTextAbt {
+            font-size: 17px;
+          }
+        
+          .TextBubbleTextTitleAbt {
+            font-size: 25px;
+          }
+          .aboutimg{
+            width:150px;
+            height:580px;
+          }
+          #discord {
+            left: 15%;
+            margin-bottom: 450px;
+          }
+          #spotify {
+            left: 30%;
+            margin-bottom: 450px;
+          }
+          #github {
+            left: 45%;
+            margin-bottom: 450px;
+          }
+          #twitter {
+            left: 60%;
+            margin-bottom: 450px;
+          }
+          #steam {
+            left: 75%;
+            margin-bottom: 450px;
+          }
+        }
+
+
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../Img/forest.gif); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+  }
+
+  .left-col{
+    float: left;
+  }
+
+  .right-col{
+    float: right;
+  }
+
+  .abtleft-col{
+    float: left;
+  }
+
+  .abtright-col{
+    float: right;
+  }
+
+  /* Navigation Bar*/
+  .topnav {
+    height: 83.4px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+
+  
+  .NavLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 18px;
+    transition: all 0.2s ease; 
+    text-decoration: none;
+    border-radius: 8px;
+    
+  }
+
+  .NavLinks a:hover {
+    text-decoration: underline;
+    color: rgb(190, 190, 190);
+    letter-spacing: 0.05em;
+  }
+  
+  .NavLinks a.active {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;;
+  }
+
+  
+  .HomeNav a:hover{
+    letter-spacing: 0.04em;
+  }
+
+  .HomeNav a {
+    transition: all 0.2s ease; 
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 21px 30px;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 8px;
+    letter-spacing: normal;
+  }
+
+
+/* Footer */
+  .footer {
+    height: 65px;
+    align-content: center;
+    text-align: center;
+    padding: 11px;
+
+  }
+
+  .footer p {
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .footericons {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+
+
+/* Icons  */
+.bubble {
+  position: absolute;
+  animation: SocialSlideIn 1s forwards;
+  opacity:0%;
+  transition: all 0.3s;
+  display: block;
+  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
+
+}
+  .bubble:hover {
+    transform: translate(0, -20%);
+  }
+  
+  #discord {
+    cursor: pointer;
+    animation-delay: 1.5s;
+    fill:#5865F2;
+  }
+  #spotify {
+    cursor: pointer;
+    animation-delay: 2s;
+    fill: #1DB954;
+  }
+  #github {
+    cursor: pointer;
+    animation-delay: 2.5s;
+    fill: #a39a9a;
+  }
+  #twitter {
+    cursor: pointer;
+    animation-delay: 3s;
+    fill: #1DA1F2;
+  }
+  #steam {
+    cursor: pointer;
+    animation-delay: 3.5s;
+    fill: #262726;
+  }
+  .custom-shape-divider-top-1636640641 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: rgb(223, 3, 3);
+  }
+  .shape-fill {
+    fill: rgb(67, 68, 67);
+  }
+
+
+
