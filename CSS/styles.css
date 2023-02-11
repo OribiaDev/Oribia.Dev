@@ -155,7 +155,7 @@ body::-webkit-scrollbar {
   .TextBubbleAbt {
     margin: auto;
     position: relative;
-    top: 6%;
+    top: 7%;
     height: auto;
     max-width: 100%;
     display:block;
@@ -814,7 +814,7 @@ body::-webkit-scrollbar {
         top: 0%;
       }
       .TextBubbleSocials{
-        width: 80%;
+        width: 50%;
         padding: 10px;
       }
       .MainBodySocials h1{
@@ -835,10 +835,13 @@ body::-webkit-scrollbar {
         width: 20vw;
       }
       .abtright-col{
+        padding-left: 50px;
         width: 50vw;
       }
       .TextBubbleAbt{
-        width: 90%;
+        top: 15px;
+        max-width: 90%;
+        width: fit-content;
         height: 500px;
       }
       .bubble{
@@ -865,11 +868,11 @@ body::-webkit-scrollbar {
         font-size: 15px;
       }
       .left-col{
-        width: 35vw;
+        width: 20vw;
       }
       
       .right-col{
-        width: 35vw;
+        width: 20vw;
       }
       .vl{
         height: 310px;
@@ -885,8 +888,8 @@ body::-webkit-scrollbar {
         font-size: 20px;
       }
       .aboutimg{
-        width:150px;
-        height:280px;
+        width:350px;
+        height:450px;
       }
       #discord {
         left: 15%;
