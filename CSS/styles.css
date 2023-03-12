@@ -4,17 +4,6 @@
 
 
 /* Animations */
-@keyframes TitleSwoop {
-      0% {transform: translateX(-300%);}
-    100% {transform: translateX(0%);}
-  } 
-
-  @keyframes SubTitleSwoop {
-    0% {transform: translateX(-450%);}
-    100% {transform: translateX(0%);}
-  }
-
-
 @keyframes SocialSlideIn {
     0% {bottom:0%;}
     100% {bottom: 10%; opacity:100%;}
@@ -155,7 +144,7 @@ body::-webkit-scrollbar {
   .TextBubbleAbt {
     margin: auto;
     position: relative;
-    top: 7%;
+    top: 6%;
     height: auto;
     max-width: 100%;
     display:block;
@@ -319,6 +308,15 @@ body::-webkit-scrollbar {
 
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
   .footer p {
     font-size: 25px;
   }
@@ -414,31 +412,41 @@ body::-webkit-scrollbar {
   .aboutimg{
     width:800px;
     height:880px;
+    padding-left: 50px;
   }
   #discord {
     left: 23%;
-    margin-bottom: 960px;
+    margin-bottom: 940px;
   }
   #spotify {
     left: 60%;
-    margin-bottom: 955px;
+    margin-bottom: 935px;
   }
   #github {
     left: 23%;
-    margin-bottom: 660px;
+    margin-bottom: 640px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 660px;
+    margin-bottom: 640px;
   }
   #steam {
     left: 23%;
-    margin-bottom: 330px;
+    margin-bottom: 310px;
   }
 }
 
 /* Media Query Smaller Phones */
-@media only screen and (max-device-height: 720px){
+@media only screen and (max-device-height: 630px){
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
   .footer p {
     font-size: 25px;
   }
@@ -562,7 +570,16 @@ body::-webkit-scrollbar {
 }
 
 /* Media Query Even Smaller Phones */
-@media only screen and (max-device-height: 620px) {
+@media only screen and (max-device-height: 550px) {
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
   .footer p {
     font-size: 25px;
   }
@@ -687,6 +704,15 @@ body::-webkit-scrollbar {
 
   /* Media Query For Desktop */
   @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
+    @keyframes TitleSwoop {
+      0% {transform: translateX(-300%);}
+    100% {transform: translateX(0%);}
+  } 
+
+  @keyframes SubTitleSwoop {
+    0% {transform: translateX(-450%);}
+    100% {transform: translateX(0%);}
+  }
     .footer p {
       font-size: 15px;
     }
@@ -802,6 +828,15 @@ body::-webkit-scrollbar {
 
     /* Media Query For Laptops */
     @media only screen and (max-height: 850px){
+      @keyframes TitleSwoop {
+        0% {transform: translateX(-300%);}
+      100% {transform: translateX(0%);}
+    } 
+  
+    @keyframes SubTitleSwoop {
+      0% {transform: translateX(-450%);}
+      100% {transform: translateX(0%);}
+    }
       .footer p {
         font-size: 15px;
       }
@@ -814,7 +849,7 @@ body::-webkit-scrollbar {
         top: 0%;
       }
       .TextBubbleSocials{
-        width: 50%;
+        width: 80%;
         padding: 10px;
       }
       .MainBodySocials h1{
@@ -835,13 +870,10 @@ body::-webkit-scrollbar {
         width: 20vw;
       }
       .abtright-col{
-        padding-left: 50px;
         width: 50vw;
       }
       .TextBubbleAbt{
-        top: 15px;
-        max-width: 90%;
-        width: fit-content;
+        width: 90%;
         height: 500px;
       }
       .bubble{
@@ -868,11 +900,11 @@ body::-webkit-scrollbar {
         font-size: 15px;
       }
       .left-col{
-        width: 20vw;
+        width: 35vw;
       }
       
       .right-col{
-        width: 20vw;
+        width: 35vw;
       }
       .vl{
         height: 310px;
@@ -888,8 +920,8 @@ body::-webkit-scrollbar {
         font-size: 20px;
       }
       .aboutimg{
-        width:350px;
-        height:450px;
+        width:150px;
+        height:280px;
       }
       #discord {
         left: 15%;
@@ -915,6 +947,15 @@ body::-webkit-scrollbar {
 
         /* Media Query For Tablets */
         @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
+          @keyframes TitleSwoop {
+            0% {transform: translateX(-300%);}
+          100% {transform: translateX(0%);}
+        } 
+      
+        @keyframes SubTitleSwoop {
+          0% {transform: translateX(-450%);}
+          100% {transform: translateX(0%);}
+        }
           .footer p {
             font-size: 20px;
           }
