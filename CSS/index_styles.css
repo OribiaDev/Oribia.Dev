@@ -134,7 +134,7 @@ body::-webkit-scrollbar {
 }
 
 /* Media Query Smaller Phones */
-@media only screen and (max-device-height: 630px){
+@media only screen and (max-device-height: 680px){
   @keyframes TitleSwoop {
     0% {transform: translateX(-300%);}
   100% {transform: translateX(0%);}
@@ -192,7 +192,7 @@ body::-webkit-scrollbar {
 }
 
 /* Media Query Even Smaller Phones */
-@media only screen and (max-device-height: 550px) {
+@media only screen and (max-device-height: 620px) {
   @keyframes TitleSwoop {
     0% {transform: translateX(-300%);}
   100% {transform: translateX(0%);}

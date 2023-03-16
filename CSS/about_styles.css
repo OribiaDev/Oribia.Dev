@@ -119,50 +119,6 @@ body::-webkit-scrollbar {
     height: auto
     }
 
-    /* Media Query Smaller Phones */
-@media only screen and (max-device-height: 630px){
-  .footer p {
-    font-size: 25px;
-  }
-  .NavLinks a {
-    font-size: 43px;
-  }
-  .HomeNav a {
-    font-size: 43px;
-  }
-  .MainBodyAbout h1{
-    font-size: 75px;
-    top: 120px;
-  }
-  .abtleft-col{
-    width: 20vw;
-  }
-  .abtright-col{
-    width: 50vw;
-  }
-  .background{
-    background-attachment: scroll;
-  }
-  .TextBubbleAbt{
-    margin-top: 18%;
-    width: 90%;
-    height: auto;
-  }
-  .TextBubbleSlide1Abt{
-    margin: 5%;
-  }
-  .TextBubbleTextAbt {
-    font-size: 16px;
-  }
-  .TextBubbleTextTitleAbt {
-    font-size: 35px;
-  }
-  .aboutimg{
-    width:800px;
-    height:880px;
-  }
-}
-
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {
   .NavLinks a {
@@ -206,8 +162,8 @@ body::-webkit-scrollbar {
   }
 }
 
-/* Media Query Even Smaller Phones */
-@media only screen and (max-device-height: 550px) {
+/* Media Query Smaller Phones */
+@media only screen and (max-device-height: 680px){
   .footer p {
     font-size: 25px;
   }
@@ -226,7 +182,6 @@ body::-webkit-scrollbar {
   }
   .abtright-col{
     width: 50vw;
-
   }
   .background{
     background-attachment: scroll;
