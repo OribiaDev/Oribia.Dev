@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/* Animations */
+@keyframes SocialSlideIn {
+    0% {bottom:0%;}
+    100% {bottom: 10%; opacity:100%;}
+  }
+
+/* Basic Templates */
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  display: none;
+}
+
+/* Index */
+.MainBody {
+    background-color: transparent;
+    width: 100%;
+    height: 92.4vh;
+}
+
+.MainBody h1 {
+  font-family: 'Roboto Mono', monospace;
+    position: relative;
+    text-align: center;
+    cursor:default;
+    margin: auto;
+    background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
+    color: white;
+    animation: TitleSwoop 2s;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+    white-space: nowrap;
+    transition: 0.3s;
+    width: fit-content
+  }
+
+  .MainBody h1:hover {
+    letter-spacing: .08em;
+  }
+
+  .MainBody h2:hover {
+    letter-spacing: .1em;
+  }
+
+  .MainBody h2 {
+    font-family: 'Roboto Mono', monospace;
+      position: relative;
+      text-align: center;
+      margin: auto;
+      cursor:default;
+      background: linear-gradient(250deg,  #bfbba0, #fbbc75, #f494a2); 
+      color: white;
+      animation: SubTitleSwoop 2.1s;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 28px;
+      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+      white-space: nowrap;
+      letter-spacing: .02em;
+      transition: 0.3s;
+      width: fit-content;
+    }
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
+  .footer p {
+    font-size: 25px;
+  }
+  .MainBody h1{
+    font-size: 120px;
+    top: 200px;
+  }
+  .MainBody h2{
+    font-size: 40px;
+    top: 210px;
+  }
+  .NavLinks a {
+    font-size: 43px;
+  }
+  .HomeNav a {
+    font-size: 43px;
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 160px;
+    width: 160px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 940px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 935px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 640px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 640px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 310px;
+  }
+}
+
+/* Media Query Smaller Phones */
+@media only screen and (max-device-height: 680px){
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
+  .footer p {
+    font-size: 25px;
+  }
+  .MainBody h1{
+    font-size: 120px;
+    top: 200px;
+  }
+  .MainBody h2{
+    font-size: 40px;
+    top: 210px;
+  }
+  .NavLinks a {
+    font-size: 43px;
+  }
+  .HomeNav a {
+    font-size: 43px;
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 160px;
+    width: 160px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 780px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 775px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 480px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 480px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 180px;
+  }
+}
+
+/* Media Query Even Smaller Phones */
+@media only screen and (max-device-height: 620px) {
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
+  .footer p {
+    font-size: 25px;
+  }
+  .MainBody h1{
+    font-size: 120px;
+    top: 200px;
+  }
+  .MainBody h2{
+    font-size: 40px;
+    top: 210px;
+  }
+  .NavLinks a {
+    font-size: 43px;
+  }
+  .HomeNav a {
+    font-size: 43px;
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 160px;
+    width: 160px;
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 550px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 545px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 280px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 280px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 20px;
+  }
+}
+
+  /* Media Query For Desktop */
+  @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
+    @keyframes TitleSwoop {
+      0% {transform: translateX(-300%);}
+    100% {transform: translateX(0%);}
+  } 
+
+  @keyframes SubTitleSwoop {
+    0% {transform: translateX(-450%);}
+    100% {transform: translateX(0%);}
+  }
+    .footer p {
+      font-size: 15px;
+    }
+    .MainBody h1{
+      font-size: 128px;
+      top: 7%;
+    }
+    .MainBody h2{
+      font-size: 30px;
+      top: 7.2%
+    }
+    .NavLinks a {
+      font-size: 25px;
+    }
+    .HomeNav a {
+      font-size: 25px;
+    }
+    .background{
+      background-attachment: fixed;
+    }
+    .bubble{
+      margin-bottom: 120px;
+      height: 150px;
+      width: 150px;
+    }
+    #discord {
+      left: 15%;
+      margin-bottom: 120px;
+    }
+    #spotify {
+      left: 30%;
+      margin-bottom: 120px;
+    }
+    #github {
+      left: 45%;
+      margin-bottom: 120px;
+    }
+    #twitter {
+      left: 60%;
+      margin-bottom: 120px;
+    }
+    #steam {
+      left: 75%;
+      margin-bottom: 120px;
+    }
+  }
+
+    /* Media Query For Laptops */
+    @media only screen and (max-height: 850px){
+      @keyframes TitleSwoop {
+        0% {transform: translateX(-300%);}
+      100% {transform: translateX(0%);}
+    } 
+  
+    @keyframes SubTitleSwoop {
+      0% {transform: translateX(-450%);}
+      100% {transform: translateX(0%);}
+    }
+      .footer p {
+        font-size: 15px;
+      }
+      .MainBody h1{
+        font-size: 100px;
+        top: 0%;
+      }
+      .MainBody h2{
+        font-size: 22px;
+        top: 0%;
+      }
+      .NavLinks a {
+        font-size: 25px;
+      }
+      .HomeNav a {
+        font-size: 25px;
+      }
+      .background{
+        background-attachment: scroll;
+      }
+      .bubble{
+        margin-bottom: 45px;
+        height: 120px;
+        width: 120px;
+      }
+      #discord {
+        left: 15%;
+        margin-bottom: 80px;
+      }
+      #spotify {
+        left: 30%;
+        margin-bottom: 80px;
+      }
+      #github {
+        left: 45%;
+        margin-bottom: 80px;
+      }
+      #twitter {
+        left: 60%;
+        margin-bottom: 80px;
+      }
+      #steam {
+        left: 75%;
+        margin-bottom: 80px;
+      }
+    }
+
+        /* Media Query For Tablets */
+        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
+          @keyframes TitleSwoop {
+            0% {transform: translateX(-300%);}
+          100% {transform: translateX(0%);}
+        } 
+      
+        @keyframes SubTitleSwoop {
+          0% {transform: translateX(-450%);}
+          100% {transform: translateX(0%);}
+        }
+          .footer p {
+            font-size: 20px;
+          }
+          .MainBody h1{
+            font-size: 100px;
+            top: 20%;
+          }
+          .MainBody h2{
+            font-size: 22px;
+            top: 20%;
+          }
+          .NavLinks a {
+            font-size: 30px;
+          }
+          .HomeNav a {
+            font-size: 30px;
+          }
+          .background{
+            background-attachment: scroll;
+          }
+          .bubble{
+            margin-bottom: 45px;
+            height: 120px;
+            width: 120px;
+          }
+          #discord {
+            left: 15%;
+            margin-bottom: 450px;
+          }
+          #spotify {
+            left: 30%;
+            margin-bottom: 450px;
+          }
+          #github {
+            left: 45%;
+            margin-bottom: 450px;
+          }
+          #twitter {
+            left: 60%;
+            margin-bottom: 450px;
+          }
+          #steam {
+            left: 75%;
+            margin-bottom: 450px;
+          }
+        }
+
+
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(../Img/forest.gif); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+  }
+
+  /* Navigation Bar*/
+  .topnav {
+    height: 83.4px;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+
+  
+  .NavLinks a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 18px;
+    transition: all 0.2s ease; 
+    text-decoration: none;
+    border-radius: 8px;
+    
+  }
+
+  .NavLinks a:hover {
+    text-decoration: underline;
+    color: rgb(190, 190, 190);
+    letter-spacing: 0.05em;
+  }
+  
+  .NavLinks a.active {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;;
+  }
+
+  
+  .HomeNav a:hover{
+    letter-spacing: 0.04em;
+  }
+
+  .HomeNav a {
+    transition: all 0.2s ease; 
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 21px 30px;
+    margin: auto;
+    text-decoration: none;
+    border-radius: 8px;
+    letter-spacing: normal;
+  }
+
+
+/* Footer */
+  .footer {
+    height: 65px;
+    align-content: center;
+    text-align: center;
+    padding: 11px;
+
+  }
+
+  .footer p {
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+
+  .footericons {
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    padding: 16px;
+  }
+
+
+
+/* Icons  */
+.bubble {
+  position: absolute;
+  animation: SocialSlideIn 1s forwards;
+  opacity:0%;
+  transition: all 0.3s;
+  display: block;
+  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
+
+}
+  .bubble:hover {
+    transform: translate(0, -20%);
+  }
+  
+  #discord {
+    cursor: pointer;
+    animation-delay: 1.5s;
+    fill:#5865F2;
+  }
+  #spotify {
+    cursor: pointer;
+    animation-delay: 2s;
+    fill: #1DB954;
+  }
+  #github {
+    cursor: pointer;
+    animation-delay: 2.5s;
+    fill: #a39a9a;
+  }
+  #twitter {
+    cursor: pointer;
+    animation-delay: 3s;
+    fill: #1DA1F2;
+  }
+  #steam {
+    cursor: pointer;
+    animation-delay: 3.5s;
+    fill: #262726;
+  }
+  .custom-shape-divider-top-1636640641 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: rgb(223, 3, 3);
+  }
+  .shape-fill {
+    fill: rgb(67, 68, 67);
+  }
+
+
+
