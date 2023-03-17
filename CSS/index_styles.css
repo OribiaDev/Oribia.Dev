@@ -106,7 +106,7 @@ body::-webkit-scrollbar {
     padding: 7px 13px;
   }
   .background{
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
   .bubble{
     margin-bottom: 120px;
@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
     padding: 7px 13px;
   }
   .background{
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
   .bubble{
     margin-bottom: 120px;
@@ -232,7 +232,7 @@ body::-webkit-scrollbar {
     padding: 7px 13px;
   }
   .background{
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
   .bubble{
     margin-bottom: 120px;
