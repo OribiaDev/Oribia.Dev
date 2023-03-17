@@ -137,7 +137,7 @@ body::-webkit-scrollbar {
 }
 
 /* Media Query Smaller Phones */
-/* @media only screen and (max-device-height: 680px){
+@media only screen and (max-device-height: 680px){
   @keyframes TitleSwoop {
     0% {transform: translateX(-300%);}
   100% {transform: translateX(0%);}
@@ -148,109 +148,119 @@ body::-webkit-scrollbar {
   100% {transform: translateX(0%);}
 }
   .footer p {
-    font-size: 25px;
+    font-size: 12px;
   }
   .MainBody h1{
-    font-size: 120px;
-    top: 200px;
+    font-size: 45px;
+    top: 20px;
+    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
   }
   .MainBody h2{
-    font-size: 40px;
-    top: 210px;
+    font-size: 15px;
+    top: 25px;
+    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
   }
   .NavLinks a {
-    font-size: 43px;
+    font-size: 17px;
+    padding: 8px 10px;
   }
   .HomeNav a {
-    font-size: 43px;
+    font-size: 17px;
+    padding: 7px 13px;
   }
   .background{
     background-attachment: scroll;
   }
   .bubble{
     margin-bottom: 120px;
-    height: 160px;
-    width: 160px;
+    height: 8vh;
+    width: 8vh;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
   }
   #discord {
     left: 23%;
-    margin-bottom: 780px;
+    margin-bottom: 2px;
   }
   #spotify {
     left: 60%;
-    margin-bottom: 775px;
+    margin-bottom: 325px;
   }
   #github {
     left: 23%;
-    margin-bottom: 480px;
+    margin-bottom: 220px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 480px;
+    margin-bottom: 220px;
   }
   #steam {
     left: 23%;
+    margin-bottom: 80px;
+  }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 620px) {
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-300%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-330%);}
+  100% {transform: translateX(0%);}
+}
+  .footer p {
+    font-size: 12px;
+  }
+  .MainBody h1{
+    font-size: 41px;
+    top: 15px;
+    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
+  }
+  .MainBody h2{
+    font-size: 11px;
+    top: 20px;
+    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
+  }
+  .NavLinks a {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+  .HomeNav a {
+    font-size: 15px;
+    padding: 7px 13px;
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 9vh;
+    width: 9vh;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 185px;
+  }
+  #spotify {
+    left: 60%;
     margin-bottom: 180px;
   }
-} */
-
-/* Media Query Even Smaller Phones */
-/* @media only screen and (max-device-height: 620px) {
-  @keyframes TitleSwoop {
-    0% {transform: translateX(-300%);}
-  100% {transform: translateX(0%);}
-} 
-
-@keyframes SubTitleSwoop {
-  0% {transform: translateX(-330%);}
-  100% {transform: translateX(0%);}
-}
-  .footer p {
-    font-size: 25px;
-  }
-  .MainBody h1{
-    font-size: 120px;
-    top: 200px;
-  }
-  .MainBody h2{
-    font-size: 40px;
-    top: 210px;
-  }
-  .NavLinks a {
-    font-size: 43px;
-  }
-  .HomeNav a {
-    font-size: 43px;
-  }
-  .background{
-    background-attachment: scroll;
-  }
-  .bubble{
-    margin-bottom: 120px;
-    height: 160px;
-    width: 160px;
-  }
-  #discord {
-    left: 23%;
-    margin-bottom: 550px;
-  }
-  #spotify {
-    left: 60%;
-    margin-bottom: 545px;
-  }
   #github {
     left: 23%;
-    margin-bottom: 280px;
+    margin-bottom: 105px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 280px;
+    margin-bottom: 105px;
   }
   #steam {
     left: 23%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
-} */
+}
 
   /* Media Query For Desktop */
   @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
