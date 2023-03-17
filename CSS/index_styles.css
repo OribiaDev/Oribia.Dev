@@ -105,29 +105,29 @@ body::-webkit-scrollbar {
   }
   .bubble{
     margin-bottom: 120px;
-    height: 8vh;
-    width: 8vh;
+    height: 9vh;
+    width: 9vh;
     filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
   }
   #discord {
     left: 23%;
-    margin-bottom: 370px;
+    margin-bottom: 340px;
   }
   #spotify {
     left: 60%;
-    margin-bottom: 365px;
+    margin-bottom: 335px;
   }
   #github {
     left: 23%;
-    margin-bottom: 260px;
+    margin-bottom: 230px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 260px;
+    margin-bottom: 230px;
   }
   #steam {
     left: 23%;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
   }
 }
 
