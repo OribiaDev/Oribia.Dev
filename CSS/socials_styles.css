@@ -46,7 +46,6 @@ body::-webkit-scrollbar {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 70px;
     filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     white-space: nowrap;
     letter-spacing: .02em;
@@ -141,26 +140,31 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
-/* Media Query Phones */
-@media only screen and (max-device-width: 421px) {
+/* Media Query Extra Small Phones */
+@media only screen and (max-device-height: 635px) {
   .footer p {
-    font-size: 25px;
+    font-size: 9px;
   }
   .TextBubbleSocials{
-    top: 130px;
+    top: 0px;
     width: 90%;
     padding-left: 20px;
     padding-right: 20px;
   }
   .MainBodySocials h1{
-    top: 150px;
-    font-size: 75px;
+    top: 0px;
+    font-size: 30px;
+  }
+  .topnav {
+    height: 50px;
   }
   .NavLinks a {
-    font-size: 43px;
+    font-size: 16px;
+    padding: 8px 10px;
   }
   .HomeNav a {
-    font-size: 43px;
+    font-size: 15px;
+    padding: 7px 13px;
   }
   .background{
     background-attachment: scroll;
@@ -174,26 +178,89 @@ body::-webkit-scrollbar {
   }
 
   .TextBubbleTextTitleSocials {
-    font-size: 45px;
+    font-size: 21px;
+    padding-bottom: 15px;
   }
 
   .TextBubbleTextSubTitleSocials {
-    font-size: 35px;
+    font-size: 15px;
   }
 
   .TextBubbleSubTextSocials {
-    font-size: 25px;
+    font-size: 12px;
   }
   .left-col{
-    width: 20vw;
+    width: 32vw;
   }
 
   .right-col{
-    width: 20vw;
+    width: 32vw;
   }
   .vl{
-    margin-top: 25px;
-    height: 430px;
+    margin-top: 0px;
+    height: 270px;
+  }
+}
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) and (min-device-height: 635px) {
+  .footer p {
+    font-size: 12px;
+  }
+  .TextBubbleSocials{
+    top: 30px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .MainBodySocials h1{
+    top: 20px;
+    font-size: 40px;
+  }
+  .topnav {
+    height: 65px;
+  }
+  .NavLinks a {
+    font-size: 17px;
+    padding: 8px 10px;
+  }
+  .HomeNav a {
+    font-size: 17px;
+    padding: 7px 13px;
+  }
+  .background{
+    background-attachment: scroll;
+  }
+  .TextBubbleSlide1Socials{
+    margin: 6%;
+  }
+
+ .TextBubbleTextSocials {
+    font-size: 14px;
+  }
+
+  .TextBubbleTextTitleSocials {
+    font-size: 25px;
+    padding-bottom: 25px;
+  }
+
+  .TextBubbleTextSubTitleSocials {
+    font-size: 17px;
+  }
+
+  .TextBubbleSubTextSocials {
+    font-size: 13px;
+  }
+  .left-col{
+    width: 32vw;
+  }
+
+  .right-col{
+    width: 32vw;
+  }
+  .vl{
+    margin-top: 0px;
+    height: 310px;
   }
 }
 
@@ -209,11 +276,16 @@ body::-webkit-scrollbar {
       top: 6%;
       font-size: 70px;
     }
+    .topnav {
+      height: 83.4px;
+    }
     .NavLinks a {
-      font-size: 25px;
+      font-size: 28px;
+      padding: 14px 18px;
     }
     .HomeNav a {
-      font-size: 25px;
+      font-size: 28px;
+      padding: 21px 30px;
     }
     .background{
       background-attachment: fixed;
@@ -228,6 +300,7 @@ body::-webkit-scrollbar {
 
     .TextBubbleTextTitleSocials {
       font-size: 32px;
+      padding-bottom: 0px;
     }
 
     .TextBubbleTextSubTitleSocials {
@@ -250,7 +323,7 @@ body::-webkit-scrollbar {
   }
 
     /* Media Query For Laptops */
-    @media only screen and (max-height: 850px){
+    @media only screen and (max-height: 850px) and (min-width: 420px){
       .footer p {
         font-size: 15px;
       }
@@ -264,9 +337,14 @@ body::-webkit-scrollbar {
       }
       .NavLinks a {
         font-size: 25px;
+        padding: 14px 18px;
+      }
+      .topnav {
+        height: 83.4px;
       }
       .HomeNav a {
         font-size: 25px;
+        padding: 21px 30px;
       }
       .TextBubbleSlide1Socials{
         margin: 2%;
@@ -277,6 +355,7 @@ body::-webkit-scrollbar {
     
       .TextBubbleTextTitleSocials {
         font-size: 28px;
+        padding-bottom: 0px;
       }
     
       .TextBubbleTextSubTitleSocials {
@@ -296,57 +375,7 @@ body::-webkit-scrollbar {
         height: 310px;
       }
     }
-
-        /* Media Query For Tablets */
-        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
-          .footer p {
-            font-size: 20px;
-          }
-          .TextBubbleSocials{
-            width: 70%;
-            padding: 5px;
-            margin-top: 5%;
-          }
-          .MainBodySocials h1{
-            top: 2%;
-            font-size: 45px;
-          }
-          .NavLinks a {
-            font-size: 30px;
-          }
-          .HomeNav a {
-            font-size: 30px;
-          }
-          .TextBubbleSlide1Socials{
-            margin: 2%;
-          }
-          .TextBubbleTextSocials {
-            font-size: 10px;
-          }
-        
-          .TextBubbleTextTitleSocials {
-            font-size: 28px;
-          }
-        
-          .TextBubbleTextSubTitleSocials {
-            font-size: 20px;
-          }
-        
-          .TextBubbleSubTextSocials {
-            font-size: 15px;
-          }
-          .left-col{
-            width: 30vw;
-          }
-          
-          .right-col{
-            width: 30vw;
-          }
-          .vl{
-            height: 310px;
-          }
-        }
-      
+    
         body {
           -ms-overflow-style: none;  /* IE and Edge */
           scrollbar-width: none;  /* Firefox */ 
@@ -376,7 +405,6 @@ body::-webkit-scrollbar {
 
   /* Navigation Bar*/
   .topnav {
-    height: 83.4px;
     background-color: transparent;
     overflow: hidden;
   }
@@ -385,7 +413,6 @@ body::-webkit-scrollbar {
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 18px;
     transition: all 0.2s ease; 
     text-decoration: none;
     border-radius: 8px;
@@ -414,7 +441,6 @@ body::-webkit-scrollbar {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 21px 30px;
     margin: auto;
     text-decoration: none;
     border-radius: 8px;
@@ -439,11 +465,5 @@ body::-webkit-scrollbar {
     border-radius: 8px;
   }
 
-  .footericons {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    padding: 16px;
-  }
 
 

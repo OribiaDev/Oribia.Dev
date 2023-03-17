@@ -46,14 +46,6 @@ body::-webkit-scrollbar {
     width: fit-content
   }
 
-  .MainBody h1:hover {
-    letter-spacing: .08em;
-  }
-
-  .MainBody h2:hover {
-    letter-spacing: .1em;
-  }
-
   .MainBody h2 {
     font-family: 'Roboto Mono', monospace;
       position: relative;
@@ -76,12 +68,12 @@ body::-webkit-scrollbar {
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {
   @keyframes TitleSwoop {
-    0% {transform: translateX(-300%);}
+    0% {transform: translateX(-230%);}
   100% {transform: translateX(0%);}
 } 
 
 @keyframes SubTitleSwoop {
-  0% {transform: translateX(-330%);}
+  0% {transform: translateX(-280%);}
   100% {transform: translateX(0%);}
 }
   .footer p {
@@ -97,6 +89,9 @@ body::-webkit-scrollbar {
     top: 25px;
     filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
   }
+  .topnav {
+    height: 75px;
+  }
   .NavLinks a {
     font-size: 17px;
     padding: 8px 10px;
@@ -106,7 +101,81 @@ body::-webkit-scrollbar {
     padding: 7px 13px;
   }
   .background{
-    background-attachment: fixed;
+    background-attachment: scroll;
+  }
+  .bubble{
+    margin-bottom: 120px;
+    height: 8vh;
+    width: 8vh;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  }
+  #discord {
+    left: 23%;
+    margin-bottom: 370px;
+  }
+  #spotify {
+    left: 60%;
+    margin-bottom: 365px;
+  }
+  #github {
+    left: 23%;
+    margin-bottom: 260px;
+  }
+  #twitter {
+    left: 60%;
+    margin-bottom: 260px;
+  }
+  #steam {
+    left: 23%;
+    margin-bottom: 120px;
+  }
+}
+
+/* Media Query Smaller Phones */
+@media only screen and (max-device-height: 680px){
+  @keyframes TitleSwoop {
+    0% {transform: translateX(-230%);}
+  100% {transform: translateX(0%);}
+} 
+
+@keyframes SubTitleSwoop {
+  0% {transform: translateX(-280%);}
+  100% {transform: translateX(0%);}
+}
+  .footer p {
+    font-size: 12px;
+  }
+  .MainBody h1{
+    font-size: 45px;
+    top: 20px;
+    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
+  }
+  .MainBody h2{
+    font-size: 15px;
+    top: 25px;
+    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
+  }
+
+  .MainBody h1:hover {
+    letter-spacing: .08em;
+  }
+
+  .MainBody h2:hover {
+    letter-spacing: .1em;
+  }
+  .topnav {
+    height: 75px;
+  }
+  .NavLinks a {
+    font-size: 17px;
+    padding: 8px 10px;
+  }
+  .HomeNav a {
+    font-size: 17px;
+    padding: 7px 13px;
+  }
+  .background{
+    background-attachment: scroll;
   }
   .bubble{
     margin-bottom: 120px;
@@ -136,95 +205,43 @@ body::-webkit-scrollbar {
   }
 }
 
-/* Media Query Smaller Phones */
-@media only screen and (max-device-height: 680px){
-  @keyframes TitleSwoop {
-    0% {transform: translateX(-300%);}
-  100% {transform: translateX(0%);}
-} 
-
-@keyframes SubTitleSwoop {
-  0% {transform: translateX(-330%);}
-  100% {transform: translateX(0%);}
-}
-  .footer p {
-    font-size: 12px;
-  }
-  .MainBody h1{
-    font-size: 45px;
-    top: 20px;
-    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
-  }
-  .MainBody h2{
-    font-size: 15px;
-    top: 25px;
-    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
-  }
-  .NavLinks a {
-    font-size: 17px;
-    padding: 8px 10px;
-  }
-  .HomeNav a {
-    font-size: 17px;
-    padding: 7px 13px;
-  }
-  .background{
-    background-attachment: fixed;
-  }
-  .bubble{
-    margin-bottom: 120px;
-    height: 8vh;
-    width: 8vh;
-    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
-  }
-  #discord {
-    left: 23%;
-    margin-bottom: 2px;
-  }
-  #spotify {
-    left: 60%;
-    margin-bottom: 325px;
-  }
-  #github {
-    left: 23%;
-    margin-bottom: 220px;
-  }
-  #twitter {
-    left: 60%;
-    margin-bottom: 220px;
-  }
-  #steam {
-    left: 23%;
-    margin-bottom: 80px;
-  }
-}
-
 /* Media Query Extra Smaller Phones */
-@media only screen and (max-device-height: 620px) {
+@media only screen and (max-device-height: 635px) {
   @keyframes TitleSwoop {
     0% {transform: translateX(-300%);}
   100% {transform: translateX(0%);}
 } 
 
 @keyframes SubTitleSwoop {
-  0% {transform: translateX(-330%);}
+  0% {transform: translateX(-370%);}
   100% {transform: translateX(0%);}
 }
   .footer p {
-    font-size: 12px;
+    font-size: 9px;
   }
   .MainBody h1{
     font-size: 41px;
-    top: 15px;
+    top: 0px;
     filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
   }
   .MainBody h2{
     font-size: 11px;
-    top: 20px;
+    top: 0px;
     filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
   }
+
+  .MainBody h1:hover {
+    letter-spacing: .04em;
+  }
+
+  .MainBody h2:hover {
+    letter-spacing: .1em;
+  }
+  .topnav {
+    height: 82px;
+  }
   .NavLinks a {
-    font-size: 15px;
+    font-size: 16px;
     padding: 8px 10px;
   }
   .HomeNav a {
@@ -232,7 +249,7 @@ body::-webkit-scrollbar {
     padding: 7px 13px;
   }
   .background{
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
   .bubble{
     margin-bottom: 120px;
@@ -286,12 +303,23 @@ body::-webkit-scrollbar {
       top: 7.2%;
       filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     }
+
+    .MainBody h1:hover {
+      letter-spacing: .08em;
+    }
+  
+    .MainBody h2:hover {
+      letter-spacing: .1em;
+    }
+    .topnav {
+      height: 83.4px;
+    }
     .NavLinks a {
-      font-size: 25px;
+      font-size: 28px;
       padding: 14px 18px;
     }
     .HomeNav a {
-      font-size: 25px;
+      font-size: 28px;
       padding: 21px 30px;
     }
     .background{
@@ -326,7 +354,7 @@ body::-webkit-scrollbar {
   }
 
     /* Media Query For Laptops */
-    /* @media only screen and (max-height: 850px){
+    @media only screen and (max-height: 850px) and (min-width: 420px){
       @keyframes TitleSwoop {
         0% {transform: translateX(-300%);}
       100% {transform: translateX(0%);}
@@ -342,16 +370,31 @@ body::-webkit-scrollbar {
       .MainBody h1{
         font-size: 100px;
         top: 0%;
+        filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
       }
       .MainBody h2{
         font-size: 22px;
         top: 0%;
+        filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+      }
+  
+      .MainBody h1:hover {
+        letter-spacing: .08em;
+      }
+    
+      .MainBody h2:hover {
+        letter-spacing: .1em;
+      }
+      .topnav {
+        height: 83.4px;
       }
       .NavLinks a {
         font-size: 25px;
+        padding: 14px 18px;
       }
       .HomeNav a {
         font-size: 25px;
+        padding: 21px 30px;
       }
       .background{
         background-attachment: scroll;
@@ -360,6 +403,7 @@ body::-webkit-scrollbar {
         margin-bottom: 45px;
         height: 120px;
         width: 120px;
+        filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
       }
       #discord {
         left: 15%;
@@ -381,64 +425,8 @@ body::-webkit-scrollbar {
         left: 75%;
         margin-bottom: 80px;
       }
-    } */
-
-        /* Media Query For Tablets */
-        /* @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
-          @keyframes TitleSwoop {
-            0% {transform: translateX(-300%);}
-          100% {transform: translateX(0%);}
-        } 
-      
-        @keyframes SubTitleSwoop {
-          0% {transform: translateX(-450%);}
-          100% {transform: translateX(0%);}
-        }
-          .footer p {
-            font-size: 20px;
-          }
-          .MainBody h1{
-            font-size: 100px;
-            top: 20%;
-          }
-          .MainBody h2{
-            font-size: 22px;
-            top: 20%;
-          }
-          .NavLinks a {
-            font-size: 30px;
-          }
-          .HomeNav a {
-            font-size: 30px;
-          }
-          .background{
-            background-attachment: scroll;
-          }
-          .bubble{
-            margin-bottom: 45px;
-            height: 120px;
-            width: 120px;
-          }
-          #discord {
-            left: 15%;
-            margin-bottom: 450px;
-          }
-          #spotify {
-            left: 30%;
-            margin-bottom: 450px;
-          }
-          #github {
-            left: 45%;
-            margin-bottom: 450px;
-            margin-bottom: 450px;
-          }
-          #steam {
-            left: 75%;
-            margin-bottom: 450px;
-          }
-        } */
-
-
+    }
+    
   body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */ 
@@ -459,13 +447,10 @@ body::-webkit-scrollbar {
 
   /* Navigation Bar*/
   .topnav {
-    height: 83.4px;
     background-color: transparent;
     overflow: hidden;
   }
 
-
-  
   .NavLinks a {
     float: right;
     color: #f2f2f2;
@@ -521,15 +506,6 @@ body::-webkit-scrollbar {
     text-decoration: none;
     border-radius: 8px;
   }
-
-  .footericons {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    padding: 16px;
-  }
-
-
 
 /* Icons  */
 .bubble {

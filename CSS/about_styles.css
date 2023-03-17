@@ -120,89 +120,104 @@ body::-webkit-scrollbar {
     }
 
 /* Media Query Phones */
-@media only screen and (max-device-width: 421px) {
+@media only screen and (max-device-width: 421px) and (min-device-height: 635px) {
+  .footer p {
+    font-size: 12px;
+  }
+  .topnav {
+    height: 65px;
+  }
   .NavLinks a {
-    font-size: 43px;
+    font-size: 17px;
+    padding: 8px 10px;
   }
   .HomeNav a {
-    font-size: 43px;
+    font-size: 17px;
+    padding: 7px 13px;
   }
   .MainBodyAbout h1{
-    font-size: 75px;
-    top: 150px;
+    font-size: 40px;
+    top: 20px;
   }
   .abtleft-col{
-    width: 20vw;
+    width: 0vw;
   }
   .abtright-col{
-    width: 50vw;
+    width: 75vw;
   }
   .background{
     background-attachment: scroll;
   }
   .TextBubbleAbt{
-    margin-top: 21%;
-    width: 90%;
+    top: 20px;
+    width: 95%;
     height: auto;
   }
   .TextBubbleSlide1Abt{
-    margin: 5%;
+    margin: 6%;
   }
   .TextBubbleTextAbt {
-    font-size: 20px;
+    font-size: 11px;
   }
 
   .TextBubbleTextTitleAbt {
-    font-size: 40px;
+    font-size: 17px;
   }
   .aboutimg{
-    width:800px;
-    height:880px;
+    width:100vw;
+    height:30vh;
     padding-left: 50px;
   }
 }
 
-/* Media Query Smaller Phones */
-@media only screen and (max-device-height: 680px){
+/* Media Query Extra Small Phones */
+@media only screen and (max-device-height: 635px) {
   .footer p {
-    font-size: 25px;
+    font-size: 9px;
+  }
+  .topnav {
+    height: 50px;
   }
   .NavLinks a {
-    font-size: 43px;
+    font-size: 16px;
+    padding: 8px 10px;
   }
   .HomeNav a {
-    font-size: 43px;
+    font-size: 15px;
+    padding: 7px 13px;
   }
   .MainBodyAbout h1{
-    font-size: 75px;
-    top: 120px;
+    font-size: 30px;
+    top: 0px;
   }
   .abtleft-col{
-    width: 20vw;
+    width: 0vw;
   }
   .abtright-col{
-    width: 50vw;
+    width: 75vw;
   }
   .background{
     background-attachment: scroll;
   }
   .TextBubbleAbt{
-    margin-top: 18%;
-    width: 90%;
+    top: 0px;
+    width: 95%;
     height: auto;
   }
   .TextBubbleSlide1Abt{
-    margin: 5%;
+    margin: 6%;
   }
   .TextBubbleTextAbt {
-    font-size: 16px;
+    font-size: 9px;
   }
+
   .TextBubbleTextTitleAbt {
-    font-size: 35px;
+    font-size: 15px;
   }
   .aboutimg{
-    width:800px;
-    height:880px;
+    width:100vw;
+    height:30vh;
+    padding-left: 50px;
   }
 }
 
@@ -211,11 +226,16 @@ body::-webkit-scrollbar {
     .footer p {
       font-size: 15px;
     }
+    .topnav {
+      height: 83.4px;
+    }
     .NavLinks a {
-      font-size: 25px;
+      font-size: 28px;
+      padding: 14px 18px;
     }
     .HomeNav a {
-      font-size: 25px;
+      font-size: 28px;
+      padding: 21px 30px;
     }
     .MainBodyAbout h1{
       font-size: 70px;
@@ -250,25 +270,30 @@ body::-webkit-scrollbar {
   }
 
     /* Media Query For Laptops */
-    @media only screen and (max-height: 850px){
+    @media only screen and (max-height: 850px) and (min-width: 420px){
       .footer p {
         font-size: 15px;
       }
+      .topnav {
+        height: 83.4px;
+      }
       .NavLinks a {
         font-size: 25px;
+        padding: 14px 18px;
       }
       .HomeNav a {
         font-size: 25px;
+        padding: 21px 30px;
       }
       .MainBodyAbout h1{
         font-size: 45px;
-        top: 2%;
+        top: 1%;
       }
       .abtleft-col{
         width: 20vw;
       }
       .abtright-col{
-        width: 50vw;
+        width: 60vw;
       }
       .TextBubbleAbt{
         width: 90%;
@@ -285,52 +310,10 @@ body::-webkit-scrollbar {
         font-size: 20px;
       }
       .aboutimg{
-        width:150px;
-        height:280px;
+        width:50vw;
+        height:55vh;
       }
     }
-
-        /* Media Query For Tablets */
-        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
-          .footer p {
-            font-size: 20px;
-          }
-          .NavLinks a {
-            font-size: 30px;
-          }
-          .HomeNav a {
-            font-size: 30px;
-          }
-          .MainBodyAbout h1{
-            font-size: 60px;
-            top: 2%;
-          }
-          .abtleft-col{
-            width: 20vw;
-          }
-          .abtright-col{
-            width: 50vw;
-          }
-          .TextBubbleAbt{
-            margin-top: 5%;
-            width: 90%;
-            height: 750px;
-          }
-          .TextBubbleSlide1Abt{
-            margin: 1%;
-          }
-          .TextBubbleTextAbt {
-            font-size: 17px;
-          }
-        
-          .TextBubbleTextTitleAbt {
-            font-size: 25px;
-          }
-          .aboutimg{
-            width:150px;
-            height:580px;
-          }
-        }
 
         body {
           -ms-overflow-style: none;  /* IE and Edge */
@@ -361,18 +344,14 @@ body::-webkit-scrollbar {
 
   /* Navigation Bar*/
   .topnav {
-    height: 83.4px;
     background-color: transparent;
     overflow: hidden;
   }
 
-
-  
   .NavLinks a {
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 18px;
     transition: all 0.2s ease; 
     text-decoration: none;
     border-radius: 8px;
@@ -401,7 +380,6 @@ body::-webkit-scrollbar {
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 21px 30px;
     margin: auto;
     text-decoration: none;
     border-radius: 8px;
@@ -424,13 +402,6 @@ body::-webkit-scrollbar {
     padding: 0px 50px;
     text-decoration: none;
     border-radius: 8px;
-  }
-
-  .footericons {
-    height: 100px;
-    align-content: center;
-    text-align: center;
-    padding: 16px;
   }
 
 
