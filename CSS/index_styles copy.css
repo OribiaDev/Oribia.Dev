@@ -41,6 +41,7 @@ body::-webkit-scrollbar {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     white-space: nowrap;
     transition: 0.3s;
     width: fit-content
@@ -67,6 +68,7 @@ body::-webkit-scrollbar {
       -webkit-background-clip: text;
       color: transparent;
       font-size: 28px;
+      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
       white-space: nowrap;
       letter-spacing: .02em;
       transition: 0.3s;
@@ -85,59 +87,54 @@ body::-webkit-scrollbar {
   100% {transform: translateX(0%);}
 }
   .footer p {
-    font-size: 12px;
+    font-size: 25px;
   }
   .MainBody h1{
-    font-size: 45px;
-    top: 20px;
-    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
+    font-size: 120px;
+    top: 200px;
   }
   .MainBody h2{
-    font-size: 15px;
-    top: 25px;
-    filter: drop-shadow(5px 5px 5px rgb(0,0,0,0.9));
+    font-size: 40px;
+    top: 210px;
   }
   .NavLinks a {
-    font-size: 17px;
-    padding: 8px 10px;
+    font-size: 43px;
   }
   .HomeNav a {
-    font-size: 17px;
-    padding: 7px 13px;
+    font-size: 43px;
   }
   .background{
     background-attachment: scroll;
   }
   .bubble{
     margin-bottom: 120px;
-    height: 8vh;
-    width: 8vh;
-    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+    height: 160px;
+    width: 160px;
   }
   #discord {
     left: 23%;
-    margin-bottom: 330px;
+    margin-bottom: 940px;
   }
   #spotify {
     left: 60%;
-    margin-bottom: 325px;
+    margin-bottom: 935px;
   }
   #github {
     left: 23%;
-    margin-bottom: 220px;
+    margin-bottom: 640px;
   }
   #twitter {
     left: 60%;
-    margin-bottom: 220px;
+    margin-bottom: 640px;
   }
   #steam {
     left: 23%;
-    margin-bottom: 80px;
+    margin-bottom: 310px;
   }
 }
 
 /* Media Query Smaller Phones */
-/* @media only screen and (max-device-height: 680px){
+@media only screen and (max-device-height: 680px){
   @keyframes TitleSwoop {
     0% {transform: translateX(-300%);}
   100% {transform: translateX(0%);}
@@ -192,10 +189,10 @@ body::-webkit-scrollbar {
     left: 23%;
     margin-bottom: 180px;
   }
-} */
+}
 
 /* Media Query Even Smaller Phones */
-/* @media only screen and (max-device-height: 620px) {
+@media only screen and (max-device-height: 620px) {
   @keyframes TitleSwoop {
     0% {transform: translateX(-300%);}
   100% {transform: translateX(0%);}
@@ -250,7 +247,7 @@ body::-webkit-scrollbar {
     left: 23%;
     margin-bottom: 20px;
   }
-} */
+}
 
   /* Media Query For Desktop */
   @media only screen and (min-device-width: 450px) and (min-device-height: 860px){
@@ -269,20 +266,16 @@ body::-webkit-scrollbar {
     .MainBody h1{
       font-size: 128px;
       top: 7%;
-      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
     }
     .MainBody h2{
       font-size: 30px;
-      top: 7.2%;
-      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.9));
+      top: 7.2%
     }
     .NavLinks a {
       font-size: 25px;
-      padding: 14px 18px;
     }
     .HomeNav a {
       font-size: 25px;
-      padding: 21px 30px;
     }
     .background{
       background-attachment: fixed;
@@ -291,7 +284,6 @@ body::-webkit-scrollbar {
       margin-bottom: 120px;
       height: 150px;
       width: 150px;
-      filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
     }
     #discord {
       left: 15%;
@@ -316,7 +308,7 @@ body::-webkit-scrollbar {
   }
 
     /* Media Query For Laptops */
-    /* @media only screen and (max-height: 850px){
+    @media only screen and (max-height: 850px){
       @keyframes TitleSwoop {
         0% {transform: translateX(-300%);}
       100% {transform: translateX(0%);}
@@ -371,10 +363,10 @@ body::-webkit-scrollbar {
         left: 75%;
         margin-bottom: 80px;
       }
-    } */
+    }
 
         /* Media Query For Tablets */
-        /* @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
+        @media only screen and (min-device-width: 440px) and (max-device-width: 820px) and (min-device-height: 1100px){
           @keyframes TitleSwoop {
             0% {transform: translateX(-300%);}
           100% {transform: translateX(0%);}
@@ -420,13 +412,16 @@ body::-webkit-scrollbar {
           #github {
             left: 45%;
             margin-bottom: 450px;
+          }
+          #twitter {
+            left: 60%;
             margin-bottom: 450px;
           }
           #steam {
             left: 75%;
             margin-bottom: 450px;
           }
-        } */
+        }
 
 
   body {
@@ -445,6 +440,7 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+
   }
 
   /* Navigation Bar*/
@@ -460,6 +456,7 @@ body::-webkit-scrollbar {
     float: right;
     color: #f2f2f2;
     text-align: center;
+    padding: 14px 18px;
     transition: all 0.2s ease; 
     text-decoration: none;
     border-radius: 8px;
@@ -488,6 +485,7 @@ body::-webkit-scrollbar {
     float: left;
     color: #f2f2f2;
     text-align: center;
+    padding: 2px 2px;
     margin: auto;
     text-decoration: none;
     border-radius: 8px;
@@ -528,6 +526,7 @@ body::-webkit-scrollbar {
   opacity:0%;
   transition: all 0.3s;
   display: block;
+  filter: drop-shadow(10px 10px 10px rgb(0,0,0,0.4));
 
 }
   .bubble:hover {
