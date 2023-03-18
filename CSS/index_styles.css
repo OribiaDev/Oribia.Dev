@@ -100,9 +100,6 @@ body::-webkit-scrollbar {
     font-size: 17px;
     padding: 7px 13px;
   }
-  .background{
-    background-attachment: scroll;
-  }
   .bubble{
     margin-bottom: 120px;
     height: 9vh;
@@ -174,9 +171,6 @@ body::-webkit-scrollbar {
     font-size: 17px;
     padding: 7px 13px;
   }
-  .background{
-    background-attachment: scroll;
-  }
   .bubble{
     margin-bottom: 120px;
     height: 8vh;
@@ -247,9 +241,6 @@ body::-webkit-scrollbar {
   .HomeNav a {
     font-size: 15px;
     padding: 7px 13px;
-  }
-  .background{
-    background-attachment: scroll;
   }
   .bubble{
     margin-bottom: 120px;
@@ -396,9 +387,6 @@ body::-webkit-scrollbar {
         font-size: 25px;
         padding: 21px 30px;
       }
-      .background{
-        background-attachment: scroll;
-      }
       .bubble{
         margin-bottom: 45px;
         height: 120px;
@@ -506,6 +494,29 @@ body::-webkit-scrollbar {
     text-decoration: none;
     border-radius: 8px;
   }
+
+  .footer a:link {
+    color:  rgb(206, 226, 255);
+    background-color: transparent;
+    text-decoration: none;
+    width: fit-content;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  }  
+
+  .footer a:hover {
+    color:  rgb(255, 221, 221);
+    background-color: transparent;
+    text-decoration: underline;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+
+  }
+
+  .footer a:visited {
+  color:  rgb(255, 206, 253);
+  background-color: transparent;
+  text-decoration: none;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+}
 
 /* Icons  */
 .bubble {
