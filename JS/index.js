@@ -1,5 +1,5 @@
 //Vars
-var version = 'v4.0.1'
+var version = 'v4.0.2'
 var copyrightyear = '2023'
 var dark = localStorage.getItem('dark') || 'true';
 
