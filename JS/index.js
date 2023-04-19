@@ -1,11 +1,13 @@
 //Vars
-var version = 'v4.0.0'
+var version = 'v4.0.1'
 var copyrightyear = '2023'
-var dark = localStorage.getItem('dark') || true;
+var dark = localStorage.getItem('dark') || 'true';
+
 
 
 //On Load
 window.onload = function() {
+  console.log(dark)
   console.log('Page Loaded')
   //Get Vars
   var body = document.getElementById('ModeSwitch');
