@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<link rel="StyleSheet" href="./CSS/404_styles.css">
 <link rel="icon" href="./Img/PFP.png" type = "image/x-icon">
 <body style="margin: 0;"></body>
 <title>Oribia</title>
@@ -23,6 +22,314 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&family=Poppins&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=M+PLUS+1p&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* Animations */
+@keyframes MainSlideIn {
+    0% {transform: translateY(15%); opacity:0%;}
+    100% {transform: translateY(0%); opacity:100%;}
+  }
+
+  @keyframes SpotifySlideIn {
+    0% {transform: translateY(4%)}
+    100% {transform: translateY(0%); opacity:100%;}
+  }
+
+/* Misc  */
+body {
+    background-color: #0000000d;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+html{
+    scroll-behavior: smooth;
+}
+
+.body-dark{
+  background: linear-gradient(90deg, #161122 21px, transparent 1%) center, linear-gradient(#161122 21px, transparent 1%) center, #a897d1;
+  background-size: 22px 22px;
+  background-attachment: fixed;
+  backdrop-filter: blur(0.3px);
+}
+
+.body-light{
+  background: #4568DC;  
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  background-attachment: fixed;
+}
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+    display: none;
+}
+
+
+/* Nav Bar */
+.NavBar {
+    padding-top: 10vh;
+    margin: auto;
+    border-radius: 25px;
+    width: 45%;
+}
+
+.NavLinks a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #f2f2f2;
+    text-align: left;
+    transition: all 0.11s ease; 
+    text-decoration: none;
+    border-radius: 8px;
+    width: fit-content;
+  }
+
+  .NavLinkSpacing{
+    margin-left: 30px;
+  }
+
+  .NavLinks a:hover {
+    color: rgb(178, 203, 235);
+  }
+
+  .RickRoll{
+    margin-right: 30px;
+    margin-left: 380px;
+    position: absolute;
+    width: fit-content;
+  }
+
+  button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background:none;
+    position: absolute;
+    width: fit-content;
+    margin-right: 30px;
+    margin-left: 380px;
+    position: absolute;
+    width: fit-content;
+  }
+
+  .button-dark{
+    cursor: pointer;
+    fill: white;
+    transition: all 0.11s ease; 
+  }
+
+  .button-dark:hover {
+    fill: rgb(178, 203, 235);
+  }
+
+
+/* Main Body */
+.MainBody {
+    padding-top: 10vh;
+    margin: auto;
+    border-radius: 25px;
+    width: 40%;
+}
+
+.MainBodyH1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: white;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    font-size: 55px;
+    cursor: default;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+.MainBodyH2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.718);
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+    letter-spacing: 0.02em;
+    font-size: 25px;
+    cursor: default;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+
+/* Footer */
+.footer {
+    height: 65px;
+    align-content: center;
+    text-align: center;
+    padding: 11px;
+    font-size: 16px;
+
+  }
+
+  .footer p {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 0px 50px;
+    text-decoration: none;
+    border-radius: 8px;
+    letter-spacing: 0.02em;
+  }
+
+  .footer a:link {
+    color:  rgb(180, 198, 251);
+    background-color: transparent;
+    text-decoration: underline;
+    width: fit-content;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  }  
+
+  .footer a:hover {
+    color:  rgb(226, 135, 223);
+    background-color: transparent;
+    text-decoration: underline;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+
+  }
+
+  .footer a:visited {
+    color:  rgb(180, 198, 251);
+    background-color: transparent;
+    text-decoration: none;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  }
+  
+
+  .footer a:visited:hover {
+  color:  rgb(226, 135, 223);
+  background-color: transparent;
+  text-decoration: none;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+}
+
+/* Platform Optimizations */
+
+/* Media Query For Laptops */
+@media only screen and (max-width: 1177px){
+  button{
+      margin-left: 150px;
+  }
+}   
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  .body-dark{
+    background-attachment: local;
+  }
+  .body-light{
+    background-attachment: local;
+  }  
+  /* Nav Bar */
+  .NavBar {
+    padding-top: 3vh;
+    width: 90%;
+}
+button{
+    margin-left: 18px;
+}
+.NavLinks a {
+    font-size: 18px;
+  }
+
+  .NavLinkSpacing{
+    margin-left: 21px;
+  }
+
+  .bi-bi-house-fill{
+    width: 0px;
+    height: 0px;
+  }
+
+
+    /* Main Body */
+    .MainBody {
+      padding-top: 10vh;
+      margin:65px;
+      width: 40%;
+      height:86px
+  }
+  .MainBodyH1 {
+      width: 290px;
+      font-size: 45px;
+  }
+  .MainBodyH2 {
+      width: 290px;
+      font-size: 19px;
+  }
+    /* Footer */
+    .footer {
+      padding: 11px;
+      padding-left: 30px;
+      font-size: 13px;
+    }
+    .footer p {
+      padding: 0px 5px;
+      width: 190px;
+    }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {
+      /* Nav Bar */
+      .NavBar {
+          padding-top: 3vh;
+          width: 90%;
+      }
+      button{
+          margin-left: 38px;
+      }
+      .NavLinks a {
+          font-size: 15px;
+        }
+  
+        .NavLinkSpacing{
+          margin-left: 21px;
+        }
+  
+        .bi-bi-house-fill{
+          width: 0px;
+          height: 0px;
+        }
+  
+        /* Main Body */
+        .MainBody {
+          padding-top: 10vh;
+          margin:65px;
+          width: 40%;
+          height:86px
+      }
+      .MainBodyH1 {
+          width: fit-content;
+          font-size: 45px;
+      }
+      .MainBodyH2 {
+          width: 340px;
+          font-size: 19px;
+      }
+      /* Footer */
+      .footer {
+          font-size: 11px;
+        }
+        .footer p {
+          padding: 0px 5px;
+        }
+}
+
+
+
+</style>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VEJFBWEMM4"></script>
 <script>
@@ -38,17 +345,6 @@
     <!-- Nav Bar -->
 <div class="NavBar">
     <div class="NavLinks">
-        <a id="NavLink1" class="" href="./index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" class="bi-bi-house-fill" viewBox="0 0 16 16">
-                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-              </svg>
-            Home
-        </a>
-        <a id="NavLink1" class="NavLinkSpacing" href="./projects/">Projects</a>
-        <a id="NavLink1" class="NavLinkSpacing" href="./socials/">Socials</a>
-        <a id="NavLink1" class="NavLinkSpacing" href="./about/">About</a>
-        <button id='ModeButton' onclick="modeClick()" type="button" class="btn-dark"></button>
     </div>
 </div>
 <!-- Main Body -->
@@ -97,7 +393,96 @@
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./JS/index.js"></script>
+<script>
+//Vars
+var version = 'v4.0.2'
+var copyrightyear = '2023'
+var dark = localStorage.getItem('dark') || 'true';
+
+
+
+//On Load
+window.onload = function() {
+  console.log(dark)
+  console.log('Page Loaded')
+  //Get Vars
+  var body = document.getElementById('ModeSwitch');
+
+  //Footer
+  // Create the footer embed
+  const embed = `
+  <p> Copyright © ${copyrightyear} Oribia. All rights reserved </p>
+  <p>${version} | <a href="https://meiibot.xyz"  target="_blank" rel="noopener noreferrer">Meii</a> | <a href="https://discord.gg/E23tPPTwSc"  target="_blank" rel="noopener noreferrer">Support Server</a></p>
+  <br>
+  `;
+// Add the embed to the page
+$('#footer').html(embed);
+
+
+  //Dark Mode
+  if(dark=='true'){
+    body.classList.remove("body-light");
+    body.classList.add("body-dark");
+      // Create the icon embed
+      const embed = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="button-dark" viewBox="0 0 16 16">
+      <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+      `;
+    // Add the embed to the page
+    $('#ModeButton').html(embed);
+  }else if(dark='false'){
+        //Light Mode
+        body.classList.remove("body-dark");
+        body.classList.add("body-light");
+        // Create the Icon embed
+      const embed = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="button-dark" viewBox="0 0 16 16">
+      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    </svg>
+      `;
+    // Add the embed to the page
+    $('#ModeButton').html(embed);
+  }
+}
+
+//Mode Button Click
+function modeClick() {
+  var body = document.getElementById('ModeSwitch');
+    //Dark Mode
+    if(dark=='true'){
+      dark='false'
+      localStorage.setItem('dark', dark);
+      body.classList.remove("body-dark");
+      body.classList.add("body-light");
+        // Create the Icon embed
+        const embed = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="button-dark" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+      </svg>
+        `;
+      // Add the embed to the page
+      $('#ModeButton').html(embed);
+      return
+    }
+    if(dark=='false'){
+      //Light Mode
+      dark='true'
+      localStorage.setItem('dark', dark);
+      body.classList.remove("body-light");
+      body.classList.add("body-dark");
+        // Create the icon embed
+        const embed = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="button-dark" viewBox="0 0 16 16">
+        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+        `;
+      // Add the embed to the page
+      $('#ModeButton').html(embed);
+      return
+    }
+}
+</script>
 </html>
 
 
