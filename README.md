@@ -5,7 +5,7 @@
 
 ## Description
 
-Oribia.Dev is a landing page for everything that is- well- me- it has my socials, and an about me. Its also hosted on my home web server <3
+Oribia.Dev is a portfolio website for everything thats me. It has my socials, projects, and a simple about me. Its also hosted on my home web server.
 
 ## Getting Started
 
