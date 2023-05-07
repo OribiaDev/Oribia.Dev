@@ -321,7 +321,7 @@ body::-webkit-scrollbar {
   /* Footer */
   .footer {
     margin-top: 750px;
-    margin-left: 40px;
+    margin-left: 1%;
     font-size: 14px;
   }
   .footer p {
@@ -398,7 +398,6 @@ body::-webkit-scrollbar {
   /* Footer */
   .footer {
     margin-top: 650px;
-    margin-left: 80px;
     font-size: 14px;
   }
   .footer p {

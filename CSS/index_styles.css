@@ -374,6 +374,12 @@ body::-webkit-scrollbar {
 }   
 
 
+@media only screen and (max-width: 1015px){
+    .MainBodyH2 {
+        width: 450px;
+    }
+}   
+
 
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {
@@ -437,7 +443,7 @@ body::-webkit-scrollbar {
     /* Footer */
     .footer {
         font-size: 14px;
-        margin-left: 40px;
+        margin-left: 1%
       }
       .footer p {
         padding: 0px 5px;
@@ -499,9 +505,7 @@ body::-webkit-scrollbar {
         }
         /* Footer */
         .footer {
-            margin-left: 50px;
             font-size: 11px;
-            
           }
           .footer p {
             padding: 0px 5px;

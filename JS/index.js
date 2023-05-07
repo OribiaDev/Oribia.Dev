@@ -1,10 +1,9 @@
 //Vars
-var version = 'v4.1.1'
+var version = 'v4.1.2'
 var copyrightyear = '2023'
 
 //On Load
 window.onload = function() {
-  console.log('Page Loaded')
   //Footer
   // Create the footer embed
   const embed = `
