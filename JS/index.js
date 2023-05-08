@@ -1,5 +1,5 @@
 //Vars
-var version = 'v4.1.2'
+var version = 'v4.2.0'
 var copyrightyear = '2023'
 
 //On Load

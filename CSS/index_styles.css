@@ -3,13 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* Animations */
-@keyframes MainSlideIn {
-    0% {transform: translateY(15%); opacity:0%;}
+@keyframes H1SlideIn {
+    0% {transform: translateY(25%); opacity:0%;}
     100% {transform: translateY(0%); opacity:100%;}
   }
-
+  @keyframes H2SlideIn {
+    0% {transform: translateY(30%)}
+    100% {transform: translateY(0%); opacity:100%;}
+  }
+  @keyframes SocialsSlideIn {
+    0% {transform: translateY(35%); opacity: 0%;}
+    100% {transform: translateY(0%); opacity:100%;}
+  }
   @keyframes SpotifySlideIn {
-    0% {transform: translateY(4%)}
+    0% {transform: translateY(2.5%)}
     100% {transform: translateY(0%); opacity:100%;}
   }
 
@@ -97,9 +104,6 @@ body::-webkit-scrollbar {
 
 /* Main Body */
 .MainBody {
-    animation: MainSlideIn 0.6s forwards;
-    opacity:0%;
-    transition: all 0.3s;
     padding-top: 10vh;
     margin: auto;
     border-radius: 25px;
@@ -107,6 +111,9 @@ body::-webkit-scrollbar {
 }
 
 .MainBodyH1 {
+    animation: H1SlideIn 0.4s forwards;
+    opacity:0%;
+    transition: all 0.3s;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     color: white;
@@ -120,6 +127,10 @@ body::-webkit-scrollbar {
 }
 
 .MainBodyH2 {
+    animation: H2SlideIn 0.4s forwards;
+    opacity:0%;
+    animation-delay: 0.1s;
+    transition: all 0.1s;
     font-family: 'Poppins', sans-serif;
     text-align: left;
     color: rgba(255, 255, 255, 0.718);
@@ -133,6 +144,10 @@ body::-webkit-scrollbar {
 
 /* Icons */
 .Icons{
+    animation: SocialsSlideIn 0.4s forwards;
+    animation-delay: 0.12s;
+    opacity:0%;
+    transition: all 0.3s;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -203,8 +218,8 @@ body::-webkit-scrollbar {
 
 /* Spotify */
 .SpotifyContainer{
-    animation: SpotifySlideIn 0.6s forwards;
-    animation-delay: 0.08s;
+    animation: SpotifySlideIn 0.4s forwards;
+    animation-delay: 0.1s;
     opacity:0%;
     transition: all 0.3s;
     animation-play-state : paused;

@@ -9,7 +9,7 @@
   }
 
   @keyframes H2SlideIn {
-    0% {transform: translateY(45%)}
+    0% {transform: translateY(30%)}
     100% {transform: translateY(0%); opacity:100%;}
   }
   
@@ -108,7 +108,7 @@ body::-webkit-scrollbar {
 }
 
 .MainBodyH1 {
-    animation: H1SlideIn 0.6s forwards;
+    animation: H1SlideIn 0.4s forwards;
     opacity:0%;
     font-family: 'Poppins', sans-serif;
     text-align: left;
@@ -123,7 +123,7 @@ body::-webkit-scrollbar {
 }
 
 .MainBodyH2 {
-    animation: H2SlideIn 0.6s forwards;
+    animation: H2SlideIn 0.4s forwards;
     animation-delay: 0.1s;
     opacity:0%;
     font-family: 'Poppins', sans-serif;
@@ -140,7 +140,7 @@ body::-webkit-scrollbar {
 /* About Boxs */
 
 .about-box-containers{
-    animation: AboutBoxSlideIn 0.6s forwards;
+    animation: AboutBoxSlideIn 0.4s forwards;
     animation-delay: 0.15s;
     opacity:0%;    
 }
