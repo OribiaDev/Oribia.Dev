@@ -7,9 +7,9 @@ const NavBar = () => {
     const storedDarkTheme = localStorage.getItem('darkTheme') || true
 
     useEffect(() => {
-        if(storedDarkTheme=='true'){
+        if(storedDarkTheme==='true'){
             switchTheme(true)
-        }else if(storedDarkTheme=='false'){
+        }else if(storedDarkTheme==='false'){
             switchTheme(false)
         }
     }, [storedDarkTheme]);
