@@ -1,0 +1,161 @@
+/* Animations */
+@keyframes SocialBoxSlideIn {
+  0% {transform: translateY(11%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+/* Social Boxs */
+.social-box{
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  height: 90px;
+  transition: all .12s ease-in-out; 
+}
+
+.SocialAnimationHandler{
+  animation: SocialBoxSlideIn 0.4s forwards;
+  opacity:0%;    
+}
+
+.social-box:hover{
+  transform: scale(1.020); 
+}
+
+.social-box-svg {
+  float: left;
+  fill: white;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.social-box-col-left{
+  float: left;
+  width: 14%;
+}
+
+.social-box-col-right{
+  float: right;
+  width: 86%;
+}
+
+.social-box-H1{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: white;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 21px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 16px;
+}
+
+.social-box-H2{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.76);
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 2px;
+  padding-bottom: 8px;
+}
+
+/* Platform Optimizations */
+/* Media Query For Skinnier Screens */
+@media only screen and (max-width: 1510px){
+  .social-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .social-box-svg {
+    height: 55px;
+    width: 55px;
+  }
+}   
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  /* Project Boxs */
+  .social-box-containers{
+    margin-left: -30px;
+  }
+  .social-box{
+    height: 80px;
+    width: 350px;
+  }
+  .social-box-svg {
+    height: 45px;
+    width: 45px;
+    padding-left: 13.5px;
+  }
+  .social-box-col-left{
+    float: left;
+    width: 14%;
+  }
+  .social-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .social-box-H1{
+    font-size: 18px;
+    margin-top: 15px;
+    padding-top: 0px;
+  }
+  .social-box-H2{
+      font-size: 14px;
+      padding-top: 2px;
+      padding-bottom: 10px;
+      padding-top: 0px;
+  }
+  .link-chain{
+    height: 20px;
+    width: 20px;
+  }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {
+  /* Project Boxs */
+  .social-box-containers{
+    margin-left: -30px;
+  }
+  .social-box{
+      height: 73px;
+      width: 335px;
+  }
+  .social-box-svg {
+    height: 40px;
+    width: 40px;
+  }
+  .social-box-col-left{
+    float: left;
+    width: 14%;
+  }
+  .social-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .social-box-H1{
+    font-size: 18px;
+    margin-top: 1px;
+    padding-top: 12px;
+  }
+  .social-box-H2{
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+  .link-chain{
+    height: 20px;
+    width: 20px;
+  }
+}
+

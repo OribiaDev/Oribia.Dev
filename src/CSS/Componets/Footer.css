@@ -1,0 +1,73 @@
+/* Footer */
+.footer {
+  height: 65px;
+  align-content: center;
+  text-align: center;
+  padding: 11px;
+  font-size: 16px;
+}
+
+.footer p {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 0px 50px;
+  text-decoration: none;
+  border-radius: 8px;
+  letter-spacing: 0.02em;
+}
+
+.footer a:link {
+  text-decoration: none;
+  color:  rgb(180, 198, 251);
+  background-color: transparent;
+  width: fit-content;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+}  
+
+.footer a:hover {
+  color:  rgb(226, 135, 223);
+  background-color: transparent;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  transition: 0.1s;
+}
+
+.footer a:visited {
+  text-decoration: none;
+  color:  rgb(180, 198, 251);
+  background-color: transparent;
+  text-decoration: none;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+}
+
+.footer a:visited:hover {
+  color:  rgb(226, 135, 223);
+  background-color: transparent;
+  text-decoration: none;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  transition: 0.1s;
+}
+
+/* Platform Optimizations */
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  /* Footer */
+  .footer {
+    font-size: 14px;
+    margin-left: 1%
+  }
+  .footer p {
+    padding: 0px 5px;
+  }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {
+  /* Footer */
+  .footer {
+      font-size: 14px;
+    }
+  .footer p {
+    padding: 0px 5px;
+  }
+}

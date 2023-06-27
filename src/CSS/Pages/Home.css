@@ -1,0 +1,208 @@
+/* Animations */
+@keyframes H1SlideIn {
+    0% {transform: translateY(25%); opacity:0%;}
+    100% {transform: translateY(0%); opacity:100%;}
+}
+@keyframes H2SlideIn {
+    0% {transform: translateY(30%)}
+    100% {transform: translateY(0%); opacity:100%;}
+}
+@keyframes SocialsSlideIn {
+    0% {transform: translateY(35%); opacity: 0%;}
+    100% {transform: translateY(0%); opacity:100%;}
+}
+@keyframes SpotifySlideIn {
+    0% {transform: translateY(11%)}
+    100% {transform: translateY(0%); opacity:100%;}
+}
+
+/* Main Body */
+.MainBody {
+    padding-top: 10vh;
+    margin: auto;
+    border-radius: 25px;
+    width: 40%;
+}
+
+.MainBodyH1 {
+    animation: H1SlideIn 0.4s forwards;
+    opacity:0%;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: white;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    font-size: 55px;
+    cursor: default;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+.MainBodyH2 {
+    animation: H2SlideIn 0.4s forwards;
+    opacity:0%;
+    animation-delay: 0.1s;
+    transition: all 0.1s;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.718);
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+    letter-spacing: 0.02em;
+    font-size: 25px;
+    cursor: default;
+    transition: 0.2s;
+    width: fit-content;
+}
+
+/* Icons */
+.Icons{
+    animation: SocialsSlideIn 0.4s forwards;
+    animation-delay: 0.15s;
+    opacity:0%;
+    transition: all 0.3s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bubble {
+    height: 27px;
+    width: 27px;
+    padding-left: 14px;
+    transition: 0.1s;
+    filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+}
+
+.bubble:hover {
+    transform: translate(0, -18%);
+    transition: 0.23s;
+}
+
+#discord {
+    padding-left: 2px;
+    cursor: pointer;
+    fill:white;
+}
+#discord:hover {
+    fill:#5865F2;
+}
+#spotify {
+    cursor: pointer;
+    animation-delay: 2s;
+    fill:white;
+}
+#spotify:hover {
+    fill: #1DB954;
+}
+#github {
+    cursor: pointer;
+    fill:white;
+}
+#github:hover {
+    fill: #a39a9a;
+}
+#twitter {
+    cursor: pointer;
+    fill:white
+}
+#twitter:hover {
+    fill: #1DA1F2;
+}
+#steam {
+    cursor: pointer;
+    fill:white
+}
+#steam:hover {
+    fill: #262726;
+}
+
+.custom-shape-divider-top-1636640641 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    fill: rgb(223, 3, 3);
+}
+
+.shape-fill {
+    fill: rgb(67, 68, 67);
+}
+
+/* Platform Optimizations */
+/* Media Query For Laptops */
+@media only screen and (max-width: 1015px){
+    .MainBodyH2 {
+        width: 450px;
+    }
+}   
+
+@media only screen and (max-width: 1015px){
+    .MainBodyH2 {
+        width: 450px;
+    }
+}   
+  
+/* Skinner Skinner Screen */
+@media only screen and (max-width: 860px){
+    /* Main Body */
+    .MainBody {
+        width: 73%;
+    }
+}  
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+      /* Main Body */
+      .MainBody {
+        padding-top: 10vh;
+        margin:65px;
+        width: 40%;
+        height:fit-content;
+    }
+    .MainBodyH1 {
+        width: fit-content;
+        font-size: 50px;
+        margin-left: -20px;
+        white-space: nowrap;
+    }
+    .MainBodyH2 {
+        width: 340px;
+        font-size: 20.5px;
+        margin-left: -20px;
+    }
+    /* Icons */
+    .Icons{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 200px;
+        margin-left: -20px;
+    }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {  
+    /* Main Body */
+    .MainBody {
+        padding-top: 10vh;
+        margin:65px;
+        width: 40%;
+        height:fit-content;
+    }
+    .MainBodyH1 {
+        width: fit-content;
+        font-size: 45px;
+    }
+    .MainBodyH2 {
+        width: 340px;
+        font-size: 19px;
+    }
+    /* Icons */
+    .Icons{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 200px;
+    }
+}

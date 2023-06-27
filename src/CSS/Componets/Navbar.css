@@ -1,0 +1,127 @@
+/* Nav Bar */
+.NavBar {
+  padding-top: 10vh;
+  margin: auto;
+  border-radius: 25px;
+  width: 45%;
+}
+
+.NavLinks a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #f2f2f2;
+  text-align: left;
+  transition: all 0.11s ease; 
+  text-decoration: none;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.bi-bi-house-fill{
+  margin-right: 6px;
+}
+
+.NavLinkSpacing{
+  margin-left: 35px;
+}
+
+.NavLinks a:hover {
+  color: rgb(178, 203, 235);
+}
+
+button{
+  appearance: none;
+  border: none;
+  outline: none;
+  background:none;
+  position: absolute;
+  width: fit-content;
+  margin-right: 30px;
+  margin-left: 380px;
+  position: absolute;
+  width: fit-content;
+}
+
+.button-dark{
+  cursor: pointer;
+  fill: white;
+  transition: all 0.11s ease; 
+}
+
+.button-dark:hover {
+  fill: rgb(178, 203, 235);
+}
+
+/* Platform Optimizations */
+/* Skinner Screen */
+@media only screen and (max-width: 1240px){
+  button{
+      margin-left: 150px;
+  }
+  .NavLinkSpacing{
+    margin-left: 21px;
+  }
+  .bi-bi-house-fill{
+    width: 20px;
+    height: 18px;
+  }
+}   
+
+/* Skinner Skinner Screen */
+@media only screen and (max-width: 860px){
+  .bi-bi-house-fill{
+    margin-right: 6px;
+  }
+  .NavBar {
+    width: 80%;
+  }
+  button{
+    margin-left: 80px;
+  }
+}   
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  /* Nav Bar */
+  .NavBar {
+    padding-top: 3vh;
+    width: 90%;
+  }
+  button{
+    margin-left: 18px;
+  }
+  .NavLinks a {
+    font-size: 18px;
+  }
+  .NavLinkSpacing{
+    margin-left: 21px;
+  }
+  .bi-bi-house-fill{
+    width: 0px;
+    height: 0px;
+  }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {
+  /* Nav Bar */
+  .NavBar {
+    padding-top: 3vh;
+    width: 90%;
+  }
+  button{
+    margin-left: 30px;
+  }
+  .NavLinks a {
+    font-size: 17px;
+  }
+  .NavLinkSpacing{
+    margin-left: 21px;
+  }
+  .bi-bi-house-fill{
+    width: 0px;
+    height: 0px;
+  }
+}
+
+

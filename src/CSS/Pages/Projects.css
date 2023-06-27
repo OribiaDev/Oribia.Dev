@@ -1,0 +1,239 @@
+/* Animations */ 
+@keyframes ProjectBoxSlideIn {
+  0% {transform: translateY(11%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+/* Project Boxs */
+.project-box{
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  height: 90px;
+  transition: all .12s ease-in-out; 
+}
+
+.ProjectAnimationHandler{
+  animation: ProjectBoxSlideIn 0.4s forwards;
+  opacity:0%;    
+}
+
+.project-box:hover{
+    transform: scale(1.020); 
+}
+
+.project-box-svg {
+  float: left;
+  fill: white;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-top: 9px;
+}
+
+.project-box-col-left{
+  float: left;
+  width: 14%;
+}
+
+.project-box-col-right{
+  float: right;
+  width: 86%;
+}
+
+.project-box-col-left-inner{
+  float: left;
+  width: 50%;
+}
+
+.project-box-col-right-inner{
+  float: right;
+  width: 50%;
+}
+
+.project-box-H1{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: white;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 21px;
+  transition: 0.2s;
+  width: fit-content;
+  display: inline;
+}
+
+.ProjectTitle{
+  padding-top: 13px;
+  display: inline-block;
+}
+
+.project-box-H2{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.76);
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.link-chain{
+  margin-left: 6px;
+}
+
+/* Badges */
+.BadgeSpacer{
+  margin-right: 13px;
+  display: inline;
+}
+
+.Badge{
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.668);
+  border-width: 2px;
+  padding-left:5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.792);
+  margin-left: 10px;
+  width: 40px;
+  display: inline;
+}
+
+.BadgesContainer{
+  margin-top: 1px;
+  margin-bottom: 13px;
+  float: right
+}
+  
+/* Platform Optimizations */
+/* Media Query For Skinnier Screens */
+@media only screen and (max-width: 1510px){
+  .project-box-col-right{
+    width: 82%;
+  }
+  .project-box-col-left-inner{
+    width: 50%;
+  }
+  
+  .project-box-col-right-inner{
+    width: 50%;
+  }
+  .Badge{
+    font-size: 12px;
+  }
+  .project-box{
+    width: 600px;
+  }
+}  
+ 
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  /* Project Boxs */
+  .project-box-containers{
+    margin-left: -40px;
+  }
+  .project-box{
+    height: 120px;
+    width: 350px;
+  }
+  .project-box-svg {
+    padding-top: 15px;
+    padding-left: 11.5px;
+    height: 52px;
+    width: 52px;
+  }
+  .project-box-col-left{
+    float: left;
+    width: 14%;
+  }  
+  .project-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .project-box-col-left-inner{
+    float: none;
+    width: fit-content;
+  }
+  .project-box-col-right-inner{
+    float: none;
+    width: fit-content;
+  }
+  .project-box-H1{
+    font-size: 18px;
+    padding-top: 16px;
+    padding-top: 12px;
+  }
+  .ProjectTitle#oneline{
+    padding-top: 17px;
+  }
+  .project-box-H2{
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+  .link-chain{
+    height: 20px;
+    width: 20px;
+  }
+  .BadgesContainer{
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+  .Badge{
+    margin-left: 2px;
+    margin-right: 8px;
+  }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {
+  /* Project Boxs */
+  .project-box-containers{
+    margin-left: -30px;
+  }
+  .project-box{
+    height: 120px;
+    width: 350px;
+  }
+  .project-box-svg {
+    padding-top: 16.5px;
+    padding-left: 13px;
+    height: 50px;
+    width: 50px;
+  }
+  .project-box-col-left{
+    float: left;
+    width: 14%;
+  }
+  .project-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .project-box-H1{
+    font-size: 18px;
+    padding-top: 16px;
+    padding-top: 12px;
+  }
+  .project-box-H2{
+    font-size: 13px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+  .link-chain{
+    height: 20px;
+    width: 20px;
+  }
+}
+

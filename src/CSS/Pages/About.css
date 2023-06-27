@@ -1,0 +1,346 @@
+/* Animations */
+@keyframes AboutBoxSlideIn {
+  0% {transform: translateY(2.5%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+@keyframes AboutBoxSlideIn2 {
+  0% {transform: translateY(10%)}
+  100% {transform: translateY(0%); opacity:100%;}
+}
+
+@keyframes SelfieFadeIn {
+  0% {opacity:0%;}
+  100% {opacity:100%;}
+}
+
+/* About Boxs */
+.about-box{
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  height: 90px;
+  transition: all .12s ease-in-out; 
+  animation: AboutBoxSlideIn2 0.4s forwards;
+  animation-delay: 0.20s;
+  opacity:0%;    
+}
+
+.resumebox:hover{
+  transform: scale(1.020); 
+}
+
+.resumebox{
+  transition: all .12s ease-in-out; 
+}
+
+.about-box-nolink{
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  height: 330px;
+  transition: all .12s ease-in-out; 
+  animation: AboutBoxSlideIn 0.4s forwards;
+  animation-delay: 0.15s;
+  opacity:0%;
+}
+
+.about-box-svg {
+  float: left;
+  fill: white;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+.about-box-png {
+  fill: white;
+  padding-bottom: 4px;
+  padding-left: 27px;
+  padding-top: 35px;
+  max-width: 100%;
+  opacity: 0%;
+  transition: all .12s ease-in-out; 
+  animation: SelfieFadeIn 0.3s forwards;
+  animation-delay: 0.2s;
+}
+
+.about-box-col-left{
+  float: left;
+  width: 14%;
+}
+
+.about-box-col-right{
+  float: right;
+  width: 86%;
+}
+
+.about-box-col-left-nolink{
+  float: left;
+  width: 14%;
+}
+
+.about-box-col-right-nolink{
+  float: right;
+  width: 70%;
+}
+
+.about-box-col-left{
+  float: left;
+  width: 14%;
+}
+
+.about-box-col-right{
+  float: right;
+  width: 86%;
+}
+
+.about-box-H1{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: white;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 21px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 16px;
+}
+
+.about-box-H1-nolink{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: white;
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  font-size: 21px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 16px;
+}
+
+.about-box-H2{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.76);
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 2px;
+  padding-bottom: 8px;
+}
+
+.about-box-H2-nolink{
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.76);
+  filter: drop-shadow(4px 4px 4px rgb(0,0,0,0.4));
+  letter-spacing: 0.02em;
+  font-size: 16.5px;
+  transition: 0.2s;
+  width: fit-content;
+  padding-top: 2px;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  text-indent:5px
+}
+
+.vl {
+  border-left: 2px solid rgba(196, 196, 196, 0.663);
+  position: absolute;
+  left: 26.2%;
+  margin-left: -3px;
+  top: 25px;
+  height: 280px;
+}
+
+/* Platform Optimizations */
+/* Media Query For Skinnier Screens */
+@media only screen and (max-width: 1800px){
+  .about-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .about-box-svg {
+    height: 55px;
+    width: 55px;
+  }
+  img#selfie{
+    height: 0px;
+    width: 0px;
+  }
+  .vl {
+    border:none;
+  }
+  .about-box-col-left-nolink{
+    float: left;
+    width: 0%;
+  }
+  .about-box-col-right-nolink{
+    float: right;
+    width: 92%;
+  }
+  .about-box-H2-nolink{
+    font-size: 14px;
+  }
+  .about-box-nolink{
+    height: 300px;
+  }
+}   
+
+@media only screen and (max-width: 1950px){
+  .vl {
+      left: 28.2%;
+  }
+  .about-box-H2-nolink{
+      font-size: 16px;
+  }
+}   
+
+/* Media Query For Skinnier Screens */
+@media only screen and (max-width: 1560px){
+  .about-box-nolink{
+    height: 350px;
+  }
+  .about-box-H2{
+    font-size: 13.5px;
+  }
+}   
+
+@media only screen and (max-width: 1250px){
+  .about-box-H2-nolink{
+      font-size: 14px;
+  }
+  .about-box-H2{
+    font-size: 12.5px;
+  }
+}  
+
+@media only screen and (max-width: 950px){
+  .about-box-H2-nolink{
+      font-size: 13px;
+  }
+  .about-box-H2{
+    font-size: 11.5px;
+  }
+}  
+
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  /* About Boxs */
+  .about-box-containers{
+    margin-left: -35px;
+  }
+  .about-box{
+    height: 85px;
+    width: 355px;
+  }
+  .about-box-nolink{
+    width: 355px;
+    height: 450px;
+  }
+  .about-box-svg {
+    height: 49px;
+    width: 49px;
+    margin-left: -4px;
+  }
+  .about-box-col-left{
+    float: left;
+    width: 14%;
+  }
+  .about-box-col-right{
+    float: right;
+    width: 73%;
+  }
+  .about-box-col-left-nolink{
+    float: left;
+    width: 0%;
+  }
+  .about-box-col-right-nolink{
+    float: right;
+    width: 92%;
+  }
+  .about-box-H1{
+    margin-top: -5px;
+    font-size: 18px;
+    padding-top: 12px;
+    margin-left: -10px;
+  }
+  .about-box-H2{
+    font-size: 13.5px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin-left: -10px;
+  }
+  .about-box-H1-nolink{
+    margin-left: -5px;
+  }
+  .about-box-H2-nolink{
+    font-size: 15.5px;
+    margin-left: -5px;
+  }
+  img#selfie{
+    height: 0px;
+    width: 0px;
+  }
+  .vl {
+    border:none;
+  }
+  .link-chain{
+    height: 20px;
+    width: 20px;
+  }
+  .about-box-png {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+}
+
+/* Media Query Extra Smaller Phones */
+@media only screen and (max-device-height: 635px) {
+    /* About Boxs */
+    .about-box-containers{
+      margin-left: -40px;
+    }
+    .about-box{
+      height: 85px;
+      width: 330px;
+    }
+    .about-box-svg {
+      height: 45px;
+      width: 45px;
+      margin-left: -5px;
+      margin-top: 1px;
+    }
+    .about-box-col-left{
+      float: left;
+      width: 14%;
+    }
+    .about-box-col-right{
+      float: right;
+      width: 73%;
+    }
+    .about-box-H1{
+      font-size: 18px;
+      padding-top: 16px;
+      padding-top: 12px;
+    }
+    .about-box-H2{
+      font-size: 13px;
+      padding-top: 2px;
+      padding-bottom: 10px;
+      padding-top: 0px;
+    }
+    .link-chain{
+      height: 20px;
+      width: 20px;
+    }
+}

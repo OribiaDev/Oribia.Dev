@@ -1,0 +1,35 @@
+/* Misc  */
+body {
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html{
+  background: linear-gradient(90deg, #161122 21px, transparent 1%) center, linear-gradient(#161122 21px, transparent 1%) center, #a897d1;
+  background-size: 22px 22px;
+  background-attachment: fixed;
+  backdrop-filter: blur(0.3px);
+}
+
+.theme-light{
+  background: #4568DC;  
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  
+  background: linear-gradient(to right, #B06AB3, #4568DC);
+  background-attachment:fixed;
+}
+
+/* Platform Optimizations */
+/* Media Query Phones */
+@media only screen and (max-device-width: 421px) {
+  html{
+    background-attachment: local;
+    height: 86px;
+  }
+  .theme-light{
+    background-attachment: local;
+    height: 86px;
+  }  
+}
