@@ -96,8 +96,8 @@ const Projects = () => {
                                                 <div className="BadgesContainer">
                                                     <div className="Badge" id="MySQL">MySQL</div>
                                                     <div className="Badge" id="NodeJS">Node.JS</div>
-                                                    <div className="Badge" id="DiscordJS">Discord.JS</div>
-                                                    <div className="BadgeSpacer"> </div>
+                                                    <div className="Badge" id="Servers">250+ Servers</div>
+                                                    <div className="BadgeSpacer" id="Meii"> </div>
                                                 </div>
                                             </div>
 
@@ -135,8 +135,9 @@ const Projects = () => {
                                             <div className="project-box-col-right-inner">
                                                 <div className="BadgesContainer">
                                                     <div className="Badge" id="Java">Java</div>
-                                                    <div className="Badge" id="MinecraftForge">Minecraft Forge</div>
-                                                    <div className="BadgeSpacer"> </div>
+                                                    <div className="Badge" id="Forge">Forge</div>
+                                                    <div className="Badge" id="Downloads">350k+ Downloads</div>
+                                                    <div className="BadgeSpacer" id="Trinity"> </div>
                                                 </div>
                                             </div>
                                         </div>

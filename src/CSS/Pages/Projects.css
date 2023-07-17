@@ -89,7 +89,7 @@
 
 /* Badges */
 .BadgeSpacer{
-  margin-right: 13px;
+  margin-right: 16px;
   display: inline;
 }
 
@@ -117,9 +117,9 @@
   
 /* Platform Optimizations */
 /* Media Query For Skinnier Screens */
-@media only screen and (max-width: 1510px){
+@media only screen and (max-width: 1700px){
   .project-box-col-right{
-    width: 82%;
+    width: 84%;
   }
   .project-box-col-left-inner{
     width: 50%;
@@ -133,6 +133,15 @@
   }
   .project-box{
     width: 600px;
+  }
+  /* Badges */
+  .BadgeSpacer#Meii{
+    margin-right: 202px;
+    display: inline;
+  }
+  .BadgeSpacer#Trinity{
+    margin-right: 190px;
+    display: inline;
   }
 }  
  
@@ -193,6 +202,14 @@
   .Badge{
     margin-left: 2px;
     margin-right: 8px;
+  }
+  .BadgeSpacer#Meii{
+    margin-right: 16px;
+    display: inline;
+  }
+  .BadgeSpacer#Trinity{
+    margin-right: 16px;
+    display: inline;
   }
 }
 

@@ -21,11 +21,14 @@
   border-color: white;
   border-width: 2px;
   height: 90px;
-  transition: all .12s ease-in-out; 
+  transition: all .12s ease-in-out;
+}
+
+.AboutBoxAnimationHandler{
   animation: AboutBoxSlideIn2 0.4s forwards;
-  animation-delay: 0.20s;
   opacity:0%;    
 }
+
 
 .resumebox:hover{
   transform: scale(1.020); 
@@ -33,6 +36,14 @@
 
 .resumebox{
   transition: all .12s ease-in-out; 
+}
+
+.contactbox{
+  transition: all .12s ease-in-out; 
+}
+
+.contactbox:hover{
+  transform: scale(1.020); 
 }
 
 .about-box-nolink{
@@ -52,7 +63,7 @@
   fill: white;
   padding-bottom: 4px;
   padding-left: 16px;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .about-box-png {
@@ -165,7 +176,7 @@
 @media only screen and (max-width: 1800px){
   .about-box-col-right{
     float: right;
-    width: 73%;
+    width: 83%;
   }
   .about-box-svg {
     height: 55px;
@@ -174,6 +185,7 @@
   img#selfie{
     height: 0px;
     width: 0px;
+    padding: 0px;
   }
   .vl {
     border:none;
@@ -188,12 +200,15 @@
   }
   .about-box-H2-nolink{
     font-size: 14px;
+    margin-left: -15px;
+  }
+  .about-box-H1-nolink{
+    margin-left: -15px;
   }
   .about-box-nolink{
-    height: 300px;
+    height: 280px;
   }
 }   
-
 @media only screen and (max-width: 1950px){
   .vl {
       left: 28.2%;
@@ -202,34 +217,61 @@
       font-size: 16px;
   }
 }   
-
-/* Media Query For Skinnier Screens */
-@media only screen and (max-width: 1560px){
+@media only screen and (max-width: 1690px){
   .about-box-nolink{
-    height: 350px;
+    height: 300px;
   }
+}  
+@media only screen and (max-width: 1570px){
   .about-box-H2{
     font-size: 13.5px;
   }
 }   
-
-@media only screen and (max-width: 1250px){
+@media only screen and (max-width: 1500px){
+  .about-box-col-right{
+    float: right;
+    width: 80%;
+  }
+} 
+@media only screen and (max-width: 1530px){
+  .about-box-nolink{
+    height: 320px;
+  }
+} 
+/* Set Width */
+@media only screen and (max-width: 1400px){
+  .about-box-nolink{
+      width: 600px;
+  }
+  .about-box{
+    width: 600px;
+  }
   .about-box-H2-nolink{
-      font-size: 14px;
+    font-size: 17px;
   }
   .about-box-H2{
-    font-size: 12.5px;
+    font-size: 14px;
   }
-}  
-
-@media only screen and (max-width: 950px){
+  .about-box-col-right{
+    float: right;
+    width: 83%;
+  }
+}
+@media only screen and (max-width: 900px){
+  .about-box-col-right{
+    float: right;
+    width: 83%;
+  }
+  .about-box-H1{
+    padding-top: 16px;
+  }
   .about-box-H2-nolink{
-      font-size: 13px;
+    font-size: 16.5px;
   }
   .about-box-H2{
-    font-size: 11.5px;
+    font-size: 14px;
   }
-}  
+} 
 
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {
@@ -318,7 +360,7 @@
       height: 45px;
       width: 45px;
       margin-left: -5px;
-      margin-top: 1px;
+      margin-top: -1px;
     }
     .about-box-col-left{
       float: left;

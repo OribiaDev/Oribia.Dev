@@ -54,31 +54,46 @@ button{
 
 /* Platform Optimizations */
 /* Skinner Screen */
-@media only screen and (max-width: 1240px){
-  button{
-      margin-left: 150px;
-  }
-  .NavLinkSpacing{
-    margin-left: 21px;
-  }
-  .bi-bi-house-fill{
-    width: 20px;
-    height: 18px;
+@media only screen and (max-width: 1370px){
+  .NavBar {
+    width: 58%;
   }
 }   
-
-/* Skinner Skinner Screen */
-@media only screen and (max-width: 860px){
-  .bi-bi-house-fill{
-    margin-right: 6px;
+@media only screen and (max-width: 1300px){
+  .NavBar {
+    width: 60%;
   }
+}   
+@media only screen and (max-width: 1150px){
+  button{
+    margin-left: 300px;
+  }
+}   
+@media only screen and (max-width: 1100px){
+  .NavBar {
+    width: 70%;
+  }
+}  
+@media only screen and (max-width: 950px){
+  .NavBar {
+    width: 75%;
+  }
+} 
+@media only screen and (max-width: 960px){
+  button{
+    margin-left: 200px;
+  }
+} 
+@media only screen and (max-width: 900px){
   .NavBar {
     width: 80%;
   }
+} 
+@media only screen and (max-width: 860px){
   button{
-    margin-left: 80px;
+    margin-left: 150px;
   }
-}   
+} 
 
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {

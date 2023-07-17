@@ -28,7 +28,7 @@
   fill: white;
   padding-bottom: 4px;
   padding-left: 16px;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 
 .social-box-col-left{
@@ -69,17 +69,35 @@
 
 /* Platform Optimizations */
 /* Media Query For Skinnier Screens */
-@media only screen and (max-width: 1510px){
+@media only screen and (max-width: 1870px){
   .social-box-col-right{
     float: right;
-    width: 73%;
+    width: 85%;
   }
-  .social-box-svg {
-    height: 55px;
-    width: 55px;
+}   
+@media only screen and (max-width: 1700px){
+  .social-box-col-right{
+    float: right;
+    width: 84%;
   }
 }   
 
+@media only screen and (max-width: 1600px){
+  .social-box-col-right{
+    float: right;
+    width: 83%;
+  }
+}   
+/* Width Set */
+@media only screen and (max-width: 1500px){
+  .social-box{
+    width: 600px;
+  }
+  .social-box-col-right{
+    float: right;
+    width: 82%;
+  }
+}  
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {
   /* Project Boxs */
@@ -94,6 +112,7 @@
     height: 45px;
     width: 45px;
     padding-left: 13.5px;
+    padding-top: 8.5px;
   }
   .social-box-col-left{
     float: left;

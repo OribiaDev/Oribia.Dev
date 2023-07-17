@@ -138,15 +138,36 @@
         width: 450px;
     }
 }   
-
 @media only screen and (max-width: 1015px){
     .MainBodyH2 {
         width: 450px;
     }
-}   
-  
-/* Skinner Skinner Screen */
-@media only screen and (max-width: 860px){
+}  
+@media only screen and (max-width: 1370px){
+    /* Main Body */
+    .MainBody {
+        width: 51%;
+    }
+} 
+@media only screen and (max-width: 1300px){
+    /* Main Body */
+    .MainBody {
+        width: 53%;
+    }
+}
+@media only screen and (max-width: 1100px){
+    /* Main Body */
+    .MainBody {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 950px){
+    /* Main Body */
+    .MainBody {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 900px){
     /* Main Body */
     .MainBody {
         width: 73%;
