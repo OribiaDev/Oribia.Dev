@@ -1,5 +1,5 @@
 //Vars
-var version = 'v5.1.1'
+var version = 'v5.2.0'
 var copyrightyear = '2023'
 
 const Footer = () => {

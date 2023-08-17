@@ -38,7 +38,7 @@ const About = () => {
                             <div className="about-box-H1-nolink">
                                 Biography
                             </div>
-                            <div className="about-box-H2-nolink">Hi, I'm Olivia (She/Her). I am a aspiring trans girl software developer who is a freshman in college (2027) majoring in Computer Science. I've developed a mulitude of different projects ranging from video games and video game modifications, to websites and discord bots. Some notable projects incude my Minecraft mod TrinityWeapons (Over 350k Downloads), and my Discord bot Meii. Ive learned a bunch of different programming languages including but not limited too, Python, C#, Java, HTML/CSS, Javascript, and SQL. Outside of tech I also love VR, VRChat, music, and Psychology.</div>
+                            <div className="about-box-H2-nolink">Hi, I'm Olivia (She/Her). I am a aspiring trans girl software developer whos a freshman in college (2027) majoring in Computer Science. I've developed a mulitude of different projects ranging from video games and video game modifications, to websites and discord bots. Some notable projects incude my Minecraft mod TrinityWeapons (Over 350k Downloads), and my Discord bot Meii. Ive learned a bunch of different programming languages including but not limited too, Python, C#, Java, HTML/CSS, Javascript, and SQL. Outside of tech I also love VR, VRChat, music, and Psychology.</div>
                         </div>
                     </div>
                     <br />

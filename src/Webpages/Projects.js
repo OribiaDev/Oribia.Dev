@@ -94,9 +94,9 @@ const Projects = () => {
                                             </div>
                                             <div className="project-box-col-right-inner">
                                                 <div className="BadgesContainer">
-                                                    <div className="Badge" id="MySQL">MySQL</div>
+                                                    <div className="Badge" id="MongoDB">MongoDB</div>
                                                     <div className="Badge" id="NodeJS">Node.JS</div>
-                                                    <div className="Badge" id="Servers">250+ Servers</div>
+                                                    <div className="Badge" id="Servers">330+ Servers</div>
                                                     <div className="BadgeSpacer" id="Meii"> </div>
                                                 </div>
                                             </div>

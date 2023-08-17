@@ -102,12 +102,12 @@
 #github:hover {
     fill: #a39a9a;
 }
-#twitter {
+#reddit {
     cursor: pointer;
     fill:white
 }
-#twitter:hover {
-    fill: #1DA1F2;
+#reddit:hover {
+    fill: #fb7938;
 }
 #steam {
     cursor: pointer;

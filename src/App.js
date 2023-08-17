@@ -24,7 +24,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />  
           <Route path="/socials" element={<Socials />} /> \
           <Route path="/about" element={<About />} /> 
-          <Route path="*" element={<Four04 />} />
+          <Route path="*" element={<Four04 />} status={404}/>
         </Routes>
       <Footer />
       </div>
