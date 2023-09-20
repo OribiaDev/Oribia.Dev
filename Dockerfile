@@ -1,4 +1,4 @@
-FROM nginx:1.25.2-alpine
+FROM nginx:1.25.2
 COPY build /usr/share/nginx/html
 COPY DockerExtras /etc/nginx
 
