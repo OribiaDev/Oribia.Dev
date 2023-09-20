@@ -11,4 +11,10 @@ jobs:
           with:
             username: ${{ secrets.DOCKER_HUB_USERNAME }}
             password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+        - name: Build and push to Docker Hub
+          uses: docker/build-push-action@v5
+          with: 
+            context: .
+            push: true
+            tags: oribia/oribia.dev:latest, oribia.dev/oribia.dev:${{ github.run_number }}
         
