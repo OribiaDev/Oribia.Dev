@@ -256,6 +256,9 @@
     float: right;
     width: 83%;
   }
+  .about-box-H2-nolink{
+    font-size: 16.5px;
+  }
 }
 @media only screen and (max-width: 900px){
   .about-box-col-right{

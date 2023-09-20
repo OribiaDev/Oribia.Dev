@@ -13,3 +13,5 @@ const Footer = () => {
 }
  
 export default Footer;
+
+//Info on left; links and misc on right
