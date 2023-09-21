@@ -1,4 +1,4 @@
-FROM nginx:1.25.20-alpine
+FROM nginx:1.25.2-alpine
 
 # Copy build to production folder on nginx
 COPY build /usr/share/nginx/html
