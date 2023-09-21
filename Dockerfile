@@ -1,6 +1,6 @@
 FROM nginx:1.25.2
 COPY build /usr/share/nginx/html
-COPY DockerExtras /etc/nginx
+COPY DockerExtras /etc/nginx/conf.d
 
 # Installs VIM
 RUN apt-get update && apt-get install apt-file -y && apt-file update && apt-get install vim -y
