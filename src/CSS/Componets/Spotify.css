@@ -45,7 +45,7 @@
     height: 100%;
     display: block;
     border-radius: 25px;
-    backdrop-filter: saturate(200%) blur(20px);
+    backdrop-filter: saturate(200%) blur(10px);
 }
     
 #trackArtwork a img {
