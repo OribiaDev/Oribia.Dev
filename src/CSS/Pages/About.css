@@ -280,7 +280,7 @@
 @media only screen and (max-device-width: 421px) {
   /* About Boxs */
   .about-box-containers{
-    margin-left: -35px;
+    margin-left: -40px;
   }
   .about-box{
     height: 85px;

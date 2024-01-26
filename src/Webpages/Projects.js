@@ -96,7 +96,7 @@ const Projects = () => {
                                                 <div className="BadgesContainer">
                                                     <div className="Badge" id="MongoDB">MongoDB</div>
                                                     <div className="Badge" id="NodeJS">Node.JS</div>
-                                                    <div className="Badge" id="Servers">460+ Servers</div>
+                                                    <div className="Badge" id="Servers">1.1k+ Servers</div>
                                                     <div className="BadgeSpacer" id="Meii"> </div>
                                                 </div>
                                             </div>
@@ -136,7 +136,7 @@ const Projects = () => {
                                                 <div className="BadgesContainer">
                                                     <div className="Badge" id="Java">Java</div>
                                                     <div className="Badge" id="Forge">Forge</div>
-                                                    <div className="Badge" id="Downloads">350k+ Downloads</div>
+                                                    <div className="Badge" id="Downloads">351k+ Downloads</div>
                                                     <div className="BadgeSpacer" id="Trinity"> </div>
                                                 </div>
                                             </div>

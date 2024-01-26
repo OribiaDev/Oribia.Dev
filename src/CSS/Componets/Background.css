@@ -21,6 +21,15 @@ html{
   background-attachment:fixed;
 }
 
+
+/* .theme-light{
+  background-color: black;
+  background: linear-gradient(90deg, #e0e0e0 21px, transparent 1%) center, linear-gradient(#e0e0e0 21px, transparent 1%) center, #000000;
+  background-size: 22px 22px;
+  background-attachment: fixed;
+  backdrop-filter: blur(0.3px);
+} */
+
 /* Platform Optimizations */
 /* Media Query Phones */
 @media only screen and (max-device-width: 421px) {

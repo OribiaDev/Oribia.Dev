@@ -30,7 +30,7 @@ const About = () => {
                     <div className="about-box-nolink">
                         <div className="about-box-col-left-nolink">
                             <div className="about-box-png">
-                                <img id="selfie" src="../Img/Selfie.jpg" width="162" height="260" alt="Selfie" />
+                                <img id="selfie" src="../Img/Selfie.jpg" width="150" height="260" alt="Selfie" />
                             </div>
                         </div>
                         <div className="vl"></div>
