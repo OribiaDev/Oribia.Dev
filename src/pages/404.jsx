@@ -4,6 +4,10 @@ const four04 = () => {
 
     return ( 
         <div className="four04Content">
+            <title>404 • Oribia.Dev</title>
+            <meta property="og:title" content="404 • Oribia.Dev" />
+            <meta name="description" content="404 Page Not Found" />
+            <meta property="og:description" content="404 Page Not Found" />
             <div className="four04textContainer">
                 <div className="four04Title">404</div>
                 <div className="four04SubTitle">Are you sure you're in the right place?</div>
