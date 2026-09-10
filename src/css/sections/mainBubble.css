@@ -1,0 +1,366 @@
+@keyframes mainBubblePop {
+    0% {
+        transform: scale(0.99);
+        opacity: 50%;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+.mainBubbleContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.MainBubble {
+    background: transparent;
+    border: 4px solid #c3b1e162;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    width: 950px;
+    height: 530px;
+    animation: mainBubblePop 0.2s;
+}
+
+.divider {
+    background: #c3b1e162;
+    height: 90%;
+    align-self: center;
+    width: 3px;
+    border-radius: 12px;
+}
+
+.leftCol,
+.rightCol {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.leftColContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pfp {
+    width: 210px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 5px solid #c3b1e1a9;
+}
+
+.username {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    background: #232526;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.05)
+    );
+    width: 200px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pronouns {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.05)
+    );
+    width: 120px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.spotifyContainer {
+    margin-top: 5px;
+}
+
+.transText {
+    display: inline-block;
+    background: linear-gradient(
+        90deg,
+        #5BCEFA 0%,
+        #F5A9B8 30%,
+        #FFFFFF 50%,
+        #F5A9B8 70%,
+        #5BCEFA 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.rightColContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bioContent {
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.05)
+    );
+    width: 400px;
+    height: 190px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.bioTextContainer {
+    padding: 12px;
+    padding-left: 20px;
+}
+
+.bioTitle {
+    font-size: 21px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #C3B1E1;
+    letter-spacing: 0.4px;
+}
+
+.bioText {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+
+.buttonListContainer {
+    margin-top: 20px;
+}
+
+.bubbleButton {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0.05)
+    );
+    width: 400px;
+    height: 80px;
+    border-radius: 20px;
+    transition: all 0.1s;
+}
+
+.bubbleButton:hover {
+    transform: scale(1.025);
+}
+
+#bubblefirst {
+    margin-bottom: 15px;
+}
+
+.buttonContainer {
+    display: flex;
+}
+
+.logoContainer {
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.bbuttonTextContainer {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+
+.bbubbletitle {
+    color: #C3B1E1;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.bbbubblesubtext {
+    color: white;
+    font-size: 16px;
+}
+
+.socialContainer {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.socialButton {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: white;
+    padding-right: 30px;
+    transition: 0.23s;
+}
+
+.socialButton:hover {
+    color: #C3B1E1;
+    transform: translate(0, -18%);
+}
+
+@media (max-width: 1000px) {
+    .MainBubble {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .mainBubbleContent {
+        margin-top: 20px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .MainBubble {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        grid-template-columns: 1fr;
+        border-width: 3px;
+        border-radius: 18px;
+    }
+
+    .divider {
+        display: block;
+        width: 90%;
+        height: 3px;
+        margin: 10px auto;
+        justify-self: center;
+        align-self: center;
+        background: #c3b1e162;
+        border-radius: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .leftCol,
+    .rightCol {
+        padding: 15px;
+    }
+
+    .leftCol {
+        padding-bottom: 5px;
+    }
+
+    .rightCol {
+        padding-top: 10px;
+    }
+
+    .pfp {
+        width: 160px;
+        border-width: 4px;
+        margin-top: 5px;
+    }
+
+    .username {
+        width: 180px;
+        font-size: 25px;
+        margin-top: 12px;
+    }
+
+    .pronouns {
+        width: 110px;
+        font-size: 15px;
+    }
+
+    .spotifyContainer {
+        margin-top: 5px;
+        max-width: 100%;
+    }
+
+    .bioContent {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: 170px;
+        border-radius: 25px;
+    }
+
+    .bioTextContainer {
+        padding: 12px 16px;
+    }
+
+    .bioTitle {
+        font-size: 20px;
+    }
+
+    .bioText {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .buttonListContainer {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .bubbleButton {
+        width: 100%;
+        max-width: 400px;
+        height: 70px;
+        border-radius: 18px;
+    }
+
+    #bubblefirst {
+        margin-bottom: 12px;
+    }
+
+    .logoContainer {
+        margin-left: 16px;
+    }
+
+    .bbuttonTextContainer {
+        margin-left: 15px;
+        margin-top: 11px;
+    }
+
+    .bbubbletitle {
+        font-size: 22px;
+    }
+
+    .bbbubblesubtext {
+        font-size: 14px;
+    }
+
+    .socialContainer {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .socialButton {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .socialButton:hover {
+        transform: translate(0, -10%);
+    }
+}

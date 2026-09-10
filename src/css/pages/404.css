@@ -1,0 +1,73 @@
+.four04Content {
+    margin-top: 280px;
+    margin-bottom: 500px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.four04ButtonContainer {
+    display: grid;
+    place-items: center;
+}
+
+.four04Title {
+    color: #C3B1E1;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.four04SubTitle {
+    color: #d8dbf163;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.four04Button {
+    margin-top: 30px;
+    width: fit-content;
+    padding: 20px;
+    background-color: #C3B1E1;
+    border-radius: 20px;
+    transition: all 0.035s;
+    height: fit-content;
+}
+
+.four04Button:hover {
+    transform: scale(1.028);
+}
+
+.four04BText {
+    color: #252632;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .four04Content {
+        margin-top: 150px;
+        margin-bottom: 250px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .four04Title {
+        font-size: 60px;
+    }
+
+    .four04SubTitle {
+        font-size: 19px;
+    }
+
+    .four04Button {
+        margin-top: 25px;
+        padding: 16px 20px;
+        border-radius: 17px;
+    }
+
+    .four04BText {
+        font-size: 17px;
+    }
+}

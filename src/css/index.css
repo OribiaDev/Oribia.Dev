@@ -1,0 +1,18 @@
+:root {
+  background: #17181F;
+  font-family: 'Inter', sans-serif;
+}
+
+.GenericLinkDeco{
+    text-decoration: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}
+
+#GenericLinkDeco{
+    text-decoration: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+}

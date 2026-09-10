@@ -1,0 +1,169 @@
+.spotifyContainer{
+    margin-top: 20px;
+    display: flex;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.05));
+    padding-right: 20px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.spotifyLogo{
+    width: 65px;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.trackArtworkContainer{
+    position: relative;
+    width: 94px;
+    height: 94px;
+    margin-left: 18px;
+    margin-top: 13px;
+}
+
+.trackArtwork{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #C3B1E1;
+    display: block;
+}
+
+.artworkPlaceholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 2px solid #444;
+    background: #444;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.artworkPlaceholder.visible{
+    opacity: 1;
+}
+
+.loadedContent{
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.hiddenContent{
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.trackInfoContainer{
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.listeningToo{
+    color: white;
+    font-size: 12px;
+}
+
+.infoContainer{
+    margin-top: 7px;
+    margin-left: 8px;
+}
+
+.trackName{
+    width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.trackName a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #C3B1E1;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: opacity 0.3s ease;
+}
+
+.artist{
+    width: 190px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.artist a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: opacity 0.3s ease;
+}
+
+.loadingText a{
+    opacity: 0;
+    color: transparent;
+    background: #444;
+    border-radius: 5px;
+    display: inline-block;
+    min-width: 120px;
+    height: 18px;
+    transition:
+        opacity 0.3s ease,
+        background 0.3s ease;
+}
+
+.artist.loadingText a{
+    min-width: 90px;
+    height: 15px;
+}
+
+.textLoaded a{
+    opacity: 1;
+}
+
+.trackName.textLoaded a{
+    color: #C3B1E1;
+    background: transparent;
+}
+
+.artist.textLoaded a{
+    color: white;
+    background: transparent;
+}
+
+/* Screen optimization */
+@media (max-width: 858px) {
+    .spotifyContainer{
+        width: 250px;
+    }
+    .trackName{
+        width: 140px;
+    }
+
+}
+
+/* Screen optimization */
+@media (max-width: 768px) {
+    .spotifyContainer{
+        width: 300px;
+    }
+    .trackName{
+        width: 180px;
+    }
+
+}

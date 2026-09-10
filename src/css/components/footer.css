@@ -1,0 +1,33 @@
+.footerContent {
+    margin-top: 200px;
+    margin-bottom: 30px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.copyrightText {
+    color: #d8dbf13a;
+}
+
+.quoteText {
+    color: #d8dbf13a;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        margin-top: 100px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .copyrightText {
+        font-size: 14px;
+    }
+
+    .quoteText {
+        font-size: 15px;
+    }
+}
