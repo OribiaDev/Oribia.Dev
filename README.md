@@ -1,16 +1,20 @@
-# React + Vite
+<p align="center">
+ <h2 align="center">Oribia.Dev</h2>
+ <p align="center">Personal portfolio website.</p>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Oribia.Dev is my personal portfolio website that showcases the projects I made and my various social media platforms. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Help
 
-## React Compiler
+* If you find any bug or issue please let me know in the issues tab!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Authors
 
-## Expanding the ESLint configuration
+* [@Oribia_Dev](https://twitter.com/Oribia_Dev)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+
+* All Rights Reserved unless otherwise explicitly stated.
